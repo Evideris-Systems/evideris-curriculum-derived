@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://schema.evideris.com/derived/schemas/evidence-criterion.schema.json",
+  "title": "Evidence Criterion (for Centre Accreditation)",
+  "description": "Concrete evidence a centre must provide to demonstrate compliance with a source-canonical `standard`. Evideris's design for the M3 (Centre Accreditation) evidence-pack generator — NOT published by ESGE.",
+  "type": "object",
+  "allOf": [{ "$ref": "_common.schema.json#/$defs/envelope" }],
+  "required": ["type", "forStandard", "criteria"],
+  "properties": {
+    "type":        { "const": "evidenceCriterion" },
+    "forStandard": { "$ref": "_common.schema.json#/$defs/lineageId", "description": "Source-canonical std-* lineageId this criterion belongs to" },
+    "criteria": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["description"],
+        "properties": {
+          "description": { "$ref": "_common.schema.json#/$defs/localeKeyedString" },
+          "evidenceType": {
+            "enum": ["document-upload", "audit-sample", "kpi-threshold", "qi-threshold", "attestation", "process-walkthrough"]
+          },
+          "auditFrequency": {
+            "enum": ["once", "annual", "biennial", "per-accreditation-cycle"]
+          },
+          "threshold": { "type": "string", "description": "Optional pass/fail threshold (e.g. '≥90%')." }
+        },
+        "additionalProperties": false
+      }
+    },
+    "$schema": true, "$id": true, "lineageId": true, "version": true, "release": true,
+    "supersedes": true, "supersededBy": true, "language": true, "_meta": true
+  },
+  "additionalProperties": false
+}

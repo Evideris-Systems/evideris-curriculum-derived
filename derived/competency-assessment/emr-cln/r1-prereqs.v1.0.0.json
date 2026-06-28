@@ -1,0 +1,39 @@
+{
+  "$schema": "https://schema.evideris.com/derived/schemas/competency-assessment.schema.json",
+  "$id": "https://schema.evideris.com/derived/competency-assessment/emr-cln/r1-prereqs.v1.0.0.json",
+  "lineageId": "ca-emr-cln-r1-prereqs",
+  "type": "competencyAssessment",
+  "version": "1.0.0",
+  "release": "r2026.07",
+  "supersedes": null,
+  "supersededBy": null,
+  "language": [
+    "en"
+  ],
+  "forRecommendation": "rec-emr-cln-r1-prereq-competencies",
+  "assessesCompetencies": [
+    {
+      "competencyRef": "c-emr-cln-basic-colonoscopy-prereq"
+    },
+    {
+      "competencyRef": "c-emr-cln-small-polypectomy-prereq"
+    },
+    {
+      "competencyRef": "c-emr-cln-hemostasis-prereq"
+    }
+  ],
+  "_meta": {
+    "provenance": {
+      "type": "inferred-from-source",
+      "reason": "Evideris's inference: this source-canonical recommendation operationally assesses the listed atomic competencies. Inference based on the rec's statement+sub-item content. ESGE does not publish a rec\u2192competency map; this is Evideris's reading.",
+      "derived_from": [
+        "rec-emr-cln-r1-prereq-competencies",
+        "c-emr-cln-basic-colonoscopy-prereq",
+        "c-emr-cln-small-polypectomy-prereq",
+        "c-emr-cln-hemostasis-prereq"
+      ]
+    },
+    "encodedBy": "human:david",
+    "encodedAt": "2026-06-28"
+  }
+}

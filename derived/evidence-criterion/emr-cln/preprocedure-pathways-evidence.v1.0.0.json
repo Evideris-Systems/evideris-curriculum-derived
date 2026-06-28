@@ -1,0 +1,42 @@
+{
+  "$schema": "https://schema.evideris.com/derived/schemas/evidence-criterion.schema.json",
+  "$id": "https://schema.evideris.com/derived/evidence-criterion/emr-cln/preprocedure-pathways-evidence.v1.0.0.json",
+  "lineageId": "ec-emr-unit-preprocedure-pathways",
+  "type": "evidenceCriterion",
+  "version": "1.0.0",
+  "release": "r2026.07",
+  "supersedes": null,
+  "supersededBy": null,
+  "language": [
+    "en"
+  ],
+  "forStandard": "std-emr-unit-pre-procedure-pathways",
+  "criteria": [
+    {
+      "description": {
+        "en": "Copy of written or electronic pre-procedure assessment pathway document with date of last review."
+      },
+      "evidenceType": "document-upload",
+      "auditFrequency": "annual"
+    },
+    {
+      "description": {
+        "en": "Audit sample showing pathway was followed in \u226590% of recent EMR cases (random sample of n=20)."
+      },
+      "evidenceType": "audit-sample",
+      "auditFrequency": "annual",
+      "threshold": "\u226590%"
+    }
+  ],
+  "_meta": {
+    "provenance": {
+      "type": "evideris-design",
+      "reason": "Concrete evidence specs Evideris designed for the M3 Centre Accreditation evidence-pack generator. NOT published by ESGE \u2014 the source standard (text) is verbatim from Tate EMR 2023 Rec 2 sub-item, but the evidence-required list is Evideris's operationalisation of what compliance proof looks like.",
+      "derived_from": [
+        "std-emr-unit-pre-procedure-pathways"
+      ]
+    },
+    "encodedBy": "human:david",
+    "encodedAt": "2026-06-28"
+  }
+}

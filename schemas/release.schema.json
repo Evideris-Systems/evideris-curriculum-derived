@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://schema.evideris.com/derived/schemas/release.schema.json",
+  "title": "Release manifest (derived)",
+  "type": "object",
+  "required": ["$id", "type", "release", "releasedAt", "publisher", "license", "source", "_meta"],
+  "properties": {
+    "$schema":   { "type": "string", "format": "uri" },
+    "$id":       { "type": "string", "format": "uri" },
+    "type":      { "const": "release" },
+    "release":   { "$ref": "_common.schema.json#/$defs/calverRelease" },
+    "releasedAt":{ "type": "string", "format": "date" },
+    "publisher": { "type": "string" },
+    "license":   { "type": "string" },
+    "source":    { "type": "string", "format": "uri" },
+    "alignsWithSourceCanonicalRelease": { "$ref": "_common.schema.json#/$defs/calverRelease" },
+    "competencies":          { "type": "array", "items": { "$ref": "#/$defs/artifactRef" } },
+    "epas":                  { "type": "array", "items": { "$ref": "#/$defs/artifactRef" } },
+    "evidenceCriteria":      { "type": "array", "items": { "$ref": "#/$defs/artifactRef" } },
+    "competencyAssessments": { "type": "array", "items": { "$ref": "#/$defs/artifactRef" } },
+    "scoringTools":          { "type": "array", "items": { "$ref": "#/$defs/artifactRef" } },
+    "minorBumps": { "type": "array", "items": { "type": "string" } },
+    "majorBumps": { "type": "array", "items": { "type": "string" } },
+    "patchBumps": { "type": "array", "items": { "type": "string" } },
+    "_meta": { "$ref": "_common.schema.json#/$defs/metaBlock" }
+  },
+  "additionalProperties": false,
+  "$defs": {
+    "artifactRef": {
+      "type": "object",
+      "required": ["lineageId", "version"],
+      "properties": {
+        "lineageId": { "$ref": "_common.schema.json#/$defs/lineageId" },
+        "version":   { "$ref": "_common.schema.json#/$defs/semverString" }
+      },
+      "additionalProperties": false
+    }
+  }
+}

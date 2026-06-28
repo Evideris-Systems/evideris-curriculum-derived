@@ -1,0 +1,93 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://schema.evideris.com/derived/schemas/_common.schema.json",
+  "title": "Common shared definitions for Evideris-derived artifacts",
+  "$defs": {
+    "semverString": {
+      "type": "string",
+      "pattern": "^\\d+\\.\\d+\\.\\d+$"
+    },
+    "calverRelease": {
+      "type": "string",
+      "pattern": "^r\\d{4}\\.\\d{2}$"
+    },
+    "lineageId": {
+      "type": "string",
+      "pattern": "^(c|epa|ec|ca|st|std|m|cur|rec|sec)-[a-z0-9]([a-z0-9-]*[a-z0-9])?$",
+      "description": "Stable identity across versions. Type-prefixed, kebab-case. Prefixes used in derived: c- competency, epa- EPA, ec- evidence criterion, ca- competency assessment, st- scoring tool (primary source). Also valid: m-/cur-/rec-/sec- references to source-canonical lineageIds."
+    },
+    "versionedUrl": {
+      "type": "string",
+      "format": "uri",
+      "pattern": "^https://schema\\.evideris\\.com/derived/.+"
+    },
+    "localeKeyedString": {
+      "type": "object",
+      "required": ["en"],
+      "properties": {
+        "en": { "type": "string", "minLength": 1 }
+      },
+      "patternProperties": {
+        "^[a-z]{2}(-[A-Z]{2})?$": { "type": "string", "minLength": 1 }
+      },
+      "additionalProperties": false
+    },
+    "envelope": {
+      "type": "object",
+      "description": "Common envelope every derived artifact must carry.",
+      "required": ["$id", "lineageId", "type", "version", "release", "language", "_meta"],
+      "properties": {
+        "$schema": { "type": "string", "format": "uri" },
+        "$id":     { "$ref": "#/$defs/versionedUrl" },
+        "lineageId": { "$ref": "#/$defs/lineageId" },
+        "type": {
+          "enum": ["release", "competency", "epa", "evidenceCriterion", "competencyAssessment", "scoringTool"]
+        },
+        "version": { "$ref": "#/$defs/semverString" },
+        "release": { "$ref": "#/$defs/calverRelease" },
+        "supersedes":   { "anyOf": [{ "type": "null" }, { "$ref": "#/$defs/versionedUrl" }] },
+        "supersededBy": { "anyOf": [{ "type": "null" }, { "$ref": "#/$defs/versionedUrl" }] },
+        "language": {
+          "type": "array",
+          "items": { "type": "string", "pattern": "^[a-z]{2}(-[A-Z]{2})?$" },
+          "minItems": 1, "uniqueItems": true
+        },
+        "_meta": { "$ref": "#/$defs/metaBlock" }
+      }
+    },
+    "metaBlock": {
+      "type": "object",
+      "required": ["provenance", "encodedBy", "encodedAt"],
+      "properties": {
+        "provenance": { "$ref": "#/$defs/derivedProvenance" },
+        "fieldProvenance": {
+          "type": "object",
+          "description": "Per-field provenance override, keyed by JSONPath-like path.",
+          "additionalProperties": { "$ref": "#/$defs/derivedProvenance" }
+        },
+        "encodedBy":   { "type": "string", "pattern": "^(human:[a-z0-9-]+|claude:[a-z0-9-]+@v?\\d+\\.\\d+\\.\\d+|other:.+)$" },
+        "encodedAt":   { "type": "string", "format": "date" }
+      },
+      "additionalProperties": false
+    },
+    "derivedProvenance": {
+      "type": "object",
+      "description": "Required on every derived artifact. Explains the source of the content.",
+      "required": ["type", "reason"],
+      "properties": {
+        "type": {
+          "enum": ["verbatim-from-primary-source", "paraphrased-from-primary-source", "evideris-design", "inferred-from-source"]
+        },
+        "reason":            { "type": "string", "minLength": 10 },
+        "primary_source_doi":{ "type": "string", "pattern": "^10\\..+" },
+        "primary_source_span": { "type": "string" },
+        "derived_from":      {
+          "type": "array",
+          "description": "lineageIds of source-canonical artifacts this derived content was derived from.",
+          "items": { "$ref": "#/$defs/lineageId" }
+        }
+      },
+      "additionalProperties": false
+    }
+  }
+}

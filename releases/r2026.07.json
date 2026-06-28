@@ -1,0 +1,161 @@
+{
+  "$schema": "https://schema.evideris.com/derived/schemas/release.schema.json",
+  "$id": "https://schema.evideris.com/derived/releases/r2026.07.json",
+  "type": "release",
+  "release": "r2026.07",
+  "releasedAt": "2026-07-01",
+  "publisher": "Evideris Systems BV",
+  "license": "CC-BY-NC-SA-4.0",
+  "source": "https://github.com/Evideris-Systems/evideris-curriculum-derived",
+  "alignsWithSourceCanonicalRelease": "r2026.07",
+  "competencies": [
+    {
+      "lineageId": "c-emr-cln-basic-colonoscopy-prereq",
+      "version": "1.0.0"
+    },
+    {
+      "lineageId": "c-emr-cln-bleeding-management",
+      "version": "1.0.0"
+    },
+    {
+      "lineageId": "c-emr-cln-hemostasis-prereq",
+      "version": "1.0.0"
+    },
+    {
+      "lineageId": "c-emr-cln-lesion-assessment",
+      "version": "1.0.0"
+    },
+    {
+      "lineageId": "c-emr-cln-patient-consent-discussion",
+      "version": "1.0.0"
+    },
+    {
+      "lineageId": "c-emr-cln-post-emr-defect-inspection",
+      "version": "1.0.0"
+    },
+    {
+      "lineageId": "c-emr-cln-small-polypectomy-prereq",
+      "version": "1.0.0"
+    },
+    {
+      "lineageId": "c-emr-cln-smi-risk-stratification",
+      "version": "1.0.0"
+    },
+    {
+      "lineageId": "c-emr-cln-snare-capture",
+      "version": "1.0.0"
+    },
+    {
+      "lineageId": "c-emr-cln-submucosal-injection",
+      "version": "1.0.0"
+    },
+    {
+      "lineageId": "c-emr-cln-thermal-margin-ablation",
+      "version": "1.0.0"
+    }
+  ],
+  "epas": [
+    {
+      "lineageId": "epa-emr-cln-independent-piecemeal",
+      "version": "1.0.0"
+    }
+  ],
+  "evidenceCriteria": [
+    {
+      "lineageId": "ec-emr-unit-anticoagulant-protocols",
+      "version": "1.0.0"
+    },
+    {
+      "lineageId": "ec-emr-unit-preprocedure-information",
+      "version": "1.0.0"
+    },
+    {
+      "lineageId": "ec-emr-unit-preprocedure-pathways",
+      "version": "1.0.0"
+    }
+  ],
+  "competencyAssessments": [
+    {
+      "lineageId": "ca-emr-cln-r1-prereqs",
+      "version": "1.0.0"
+    },
+    {
+      "lineageId": "ca-emr-cln-r10-consent",
+      "version": "1.0.0"
+    },
+    {
+      "lineageId": "ca-emr-cln-r16-injection-cold",
+      "version": "1.0.0"
+    },
+    {
+      "lineageId": "ca-emr-cln-r17-snare-cold",
+      "version": "1.0.0"
+    },
+    {
+      "lineageId": "ca-emr-cln-r18-defect-cold",
+      "version": "1.0.0"
+    },
+    {
+      "lineageId": "ca-emr-cln-r19-injection-hot",
+      "version": "1.0.0"
+    },
+    {
+      "lineageId": "ca-emr-cln-r20-snare-hot",
+      "version": "1.0.0"
+    },
+    {
+      "lineageId": "ca-emr-cln-r22-defect-hot",
+      "version": "1.0.0"
+    },
+    {
+      "lineageId": "ca-emr-cln-r23-thermal",
+      "version": "1.0.0"
+    },
+    {
+      "lineageId": "ca-emr-cln-r29-bleeding",
+      "version": "1.0.0"
+    },
+    {
+      "lineageId": "ca-emr-cln-r3-smi",
+      "version": "1.0.0"
+    },
+    {
+      "lineageId": "ca-emr-cln-r31-postbleed",
+      "version": "1.0.0"
+    }
+  ],
+  "scoringTools": [
+    {
+      "lineageId": "st-jnet",
+      "version": "1.0.0"
+    },
+    {
+      "lineageId": "st-nice",
+      "version": "1.0.0"
+    },
+    {
+      "lineageId": "st-sydney-dmi",
+      "version": "1.0.0"
+    }
+  ],
+  "minorBumps": [
+    "Initial derived layer: 11 competencies (Evideris's atomic-skill decomposition of Tate EMR 2023 recs)",
+    "1 EPA (epa-emr-cln-independent-piecemeal \u2014 forward-design by D. Tate as Curriculum committee member)",
+    "3 evidence criteria (operationalises std-emr-unit-* compliance for Centre Accreditation evidence-pack generator)",
+    "12 competency assessments (rec \u2192 atomic-competency mappings)",
+    "3 primary-source scoring tools (NICE / JNET / Sydney DMI \u2014 Tate EMR 2023 references by name; defined in primary citations)"
+  ],
+  "majorBumps": [],
+  "patchBumps": [],
+  "_meta": {
+    "provenance": {
+      "type": "evideris-design",
+      "reason": "Initial release of the Evideris-derived layer atop esge-curriculum-schema r2026.07. Per the 2026-06-27 correctness architecture: source-canonical content stays in the public ESGE schema repo (CC BY 4.0); Evideris's derivations live here (CC BY-NC-SA 4.0) with provenance honestly declared per artifact.",
+      "derived_from": [
+        "cur-emr-colon-2023"
+      ]
+    },
+    "encodedBy": "human:david",
+    "encodedAt": "2026-06-28"
+  }
+}

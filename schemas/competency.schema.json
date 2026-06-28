@@ -1,0 +1,46 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://schema.evideris.com/derived/schemas/competency.schema.json",
+  "title": "Competency (Evideris-derived)",
+  "description": "An atomic skill being assessed — Evideris's decomposition of source ESGE recommendations into trainee-assessable units. Independently versioned; survives across curriculum revisions. The recommendation is what ESGE prints; the competency is the atom you score a trainee on.",
+  "type": "object",
+  "allOf": [{ "$ref": "_common.schema.json#/$defs/envelope" }],
+  "required": ["type", "modality", "kind", "title", "description"],
+  "properties": {
+    "type":    { "const": "competency" },
+    "modality":{ "$ref": "_common.schema.json#/$defs/lineageId" },
+    "kind": {
+      "enum": ["procedural", "theoretical", "nonTechnical", "adverseEventManagement", "communication"]
+    },
+    "title":       { "$ref": "_common.schema.json#/$defs/localeKeyedString" },
+    "description": { "$ref": "_common.schema.json#/$defs/localeKeyedString" },
+    "milestones": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["level", "criteria"],
+        "properties": {
+          "level":           { "enum": ["novice", "advanced-beginner", "competent", "proficient", "expert"] },
+          "criteria":        { "$ref": "_common.schema.json#/$defs/localeKeyedString" },
+          "expectedAtCases": { "type": "integer", "minimum": 0 }
+        },
+        "additionalProperties": false
+      }
+    },
+    "suggestedCaseload":    { "type": "integer", "minimum": 0 },
+    "qualityIndicatorRefs": { "type": "array", "items": { "$ref": "_common.schema.json#/$defs/lineageId" } },
+    "kpiRefs":              { "type": "array", "items": { "$ref": "_common.schema.json#/$defs/lineageId" } },
+    "crossRefs": {
+      "type": "object",
+      "description": "National-portal mappings (UK JAG, NL/BE/DE). Empty arrays at v1.",
+      "properties": {
+        "ukJag":     { "type": "array", "items": { "type": "string" } },
+        "uemsCesma": { "type": "array", "items": { "type": "string" } }
+      },
+      "additionalProperties": { "type": "array", "items": { "type": "string" } }
+    },
+    "$schema": true, "$id": true, "lineageId": true, "version": true, "release": true,
+    "supersedes": true, "supersededBy": true, "language": true, "_meta": true
+  },
+  "additionalProperties": false
+}

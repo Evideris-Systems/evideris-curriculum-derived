@@ -1,0 +1,62 @@
+{
+  "$schema": "https://schema.evideris.com/derived/schemas/competency.schema.json",
+  "$id": "https://schema.evideris.com/derived/competency/emr-cln/smi-risk-stratification.v1.0.0.json",
+  "lineageId": "c-emr-cln-smi-risk-stratification",
+  "type": "competency",
+  "version": "1.0.0",
+  "release": "r2026.07",
+  "supersedes": null,
+  "supersededBy": null,
+  "language": [
+    "en"
+  ],
+  "modality": "m-colonoscopy-emr",
+  "kind": "theoretical",
+  "title": {
+    "en": "Submucosal invasion (SMI) risk stratification"
+  },
+  "description": {
+    "en": "Application of the ESGE SMI risk algorithm to LNPCPs: integrates lesion location, morphology, surface/vascular pattern (NICE/JNET), and bulky features to decide between piecemeal EMR, en bloc resection, and surgical referral."
+  },
+  "milestones": [
+    {
+      "level": "novice",
+      "criteria": {
+        "en": "Recognises bulky/rectal lesions as high-risk for covert SMI with prompting."
+      }
+    },
+    {
+      "level": "competent",
+      "criteria": {
+        "en": "Independently applies the SMI risk algorithm and chooses an appropriate resection strategy concordant with expert opinion \u226590% of cases."
+      },
+      "expectedAtCases": 30
+    },
+    {
+      "level": "expert",
+      "criteria": {
+        "en": "Decisions match histology outcomes; teaches the algorithm; manages discordant cases via MDT."
+      }
+    }
+  ],
+  "suggestedCaseload": 30,
+  "qualityIndicatorRefs": [],
+  "kpiRefs": [],
+  "crossRefs": {
+    "ukJag": [],
+    "uemsCesma": []
+  },
+  "_meta": {
+    "provenance": {
+      "type": "evideris-design",
+      "reason": "Atomic-skill decomposition of source-canonical ESGE EMR recommendations into trainee-assessable units. The recommendation is what ESGE publishes; the competency is what Evideris uses to score a trainee on. Not enumerated as objects in Tate EMR 2023; this competency frame is Evideris's design.",
+      "derived_from": [
+        "rec-emr-cln-r3-smi-assessment",
+        "rec-emr-cln-r4-features-prompting-consideration-bloc",
+        "cur-emr-colon-2023"
+      ]
+    },
+    "encodedBy": "human:david",
+    "encodedAt": "2026-06-28"
+  }
+}

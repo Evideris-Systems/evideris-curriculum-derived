@@ -1,0 +1,47 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://schema.evideris.com/derived/schemas/epa.schema.json",
+  "title": "Entrustable Professional Activity (EPA)",
+  "description": "A unit of real-world work a supervisor can entrust a trainee to perform unsupervised (ten Cate framework). Bundles multiple competencies. Evideris forward-design; not formally enumerated in current ESGE publications.",
+  "type": "object",
+  "allOf": [{ "$ref": "_common.schema.json#/$defs/envelope" }],
+  "required": ["type", "modality", "title", "description", "competencyRefs", "trustLevels"],
+  "properties": {
+    "type":             { "const": "epa" },
+    "derivedFromCurriculum": { "$ref": "_common.schema.json#/$defs/lineageId" },
+    "modality":         { "$ref": "_common.schema.json#/$defs/lineageId" },
+    "title":            { "$ref": "_common.schema.json#/$defs/localeKeyedString" },
+    "description":      { "$ref": "_common.schema.json#/$defs/localeKeyedString" },
+    "competencyRefs": {
+      "type": "array",
+      "items": { "$ref": "_common.schema.json#/$defs/lineageId" },
+      "minItems": 1
+    },
+    "trustLevels": {
+      "type": "array",
+      "minItems": 5, "maxItems": 5,
+      "items": {
+        "type": "object",
+        "required": ["value", "label"],
+        "properties": {
+          "value": { "type": "integer", "minimum": 1, "maximum": 5 },
+          "label": { "$ref": "_common.schema.json#/$defs/localeKeyedString" }
+        },
+        "additionalProperties": false
+      }
+    },
+    "requiredExposure": {
+      "type": "object",
+      "properties": {
+        "minProcedures":   { "type": "integer", "minimum": 0 },
+        "minPeriodMonths": { "type": "integer", "minimum": 0 },
+        "stratifiedBy":    { "type": "string" }
+      },
+      "additionalProperties": false
+    },
+    "derivedFromMainStatement": { "type": "integer", "minimum": 1 },
+    "$schema": true, "$id": true, "lineageId": true, "version": true, "release": true,
+    "supersedes": true, "supersededBy": true, "language": true, "_meta": true
+  },
+  "additionalProperties": false
+}

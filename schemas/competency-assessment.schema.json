@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://schema.evideris.com/derived/schemas/competency-assessment.schema.json",
+  "title": "Competency Assessment (rec → competencies mapping)",
+  "description": "Maps a source-canonical recommendation to the atomic Evideris-derived competencies it implies. Replaces the `assessesCompetencies[]` field that used to live on `recommendation` in the v0 schema (moved out so source-canonical recs stay verbatim ESGE content).",
+  "type": "object",
+  "allOf": [{ "$ref": "_common.schema.json#/$defs/envelope" }],
+  "required": ["type", "forRecommendation", "assessesCompetencies"],
+  "properties": {
+    "type":              { "const": "competencyAssessment" },
+    "forRecommendation": { "$ref": "_common.schema.json#/$defs/lineageId", "description": "Source-canonical rec-* lineageId" },
+    "assessesCompetencies": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["competencyRef"],
+        "properties": {
+          "competencyRef": { "$ref": "_common.schema.json#/$defs/lineageId" },
+          "subItem":       { "type": "string", "pattern": "^[ivxlcdmIVXLCDM]+$|^[a-z]$", "description": "Optional roman-numeral sub-item label if this competency maps to a specific sub-item of the rec" },
+          "weight":        { "type": "number", "minimum": 0, "maximum": 1, "description": "Optional weight if the competency is partially assessed by this rec" }
+        },
+        "additionalProperties": false
+      }
+    },
+    "$schema": true, "$id": true, "lineageId": true, "version": true, "release": true,
+    "supersedes": true, "supersededBy": true, "language": true, "_meta": true
+  },
+  "additionalProperties": false
+}

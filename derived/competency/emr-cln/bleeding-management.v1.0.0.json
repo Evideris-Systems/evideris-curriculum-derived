@@ -1,0 +1,62 @@
+{
+  "$schema": "https://schema.evideris.com/derived/schemas/competency.schema.json",
+  "$id": "https://schema.evideris.com/derived/competency/emr-cln/bleeding-management.v1.0.0.json",
+  "lineageId": "c-emr-cln-bleeding-management",
+  "type": "competency",
+  "version": "1.0.0",
+  "release": "r2026.07",
+  "supersedes": null,
+  "supersededBy": null,
+  "language": [
+    "en"
+  ],
+  "modality": "m-colonoscopy-emr",
+  "kind": "adverseEventManagement",
+  "title": {
+    "en": "Management of intra- and post-procedural EMR bleeding"
+  },
+  "description": {
+    "en": "Recognition of significant intraprocedural bleeding, choice and safe deployment of haemostatic modalities (snare-tip soft coagulation, coagulation forceps, clips, thermal therapy), and management of clinically significant post-EMR bleeding."
+  },
+  "milestones": [
+    {
+      "level": "novice",
+      "criteria": {
+        "en": "Recognises significant bleeding; selects a haemostatic modality with prompting."
+      }
+    },
+    {
+      "level": "competent",
+      "criteria": {
+        "en": "Independently controls intraprocedural bleeding; manages post-EMR bleeding without escalation in \u226590% of cases."
+      },
+      "expectedAtCases": 30
+    },
+    {
+      "level": "expert",
+      "criteria": {
+        "en": "Teaches the technique; manages refractory bleeding; coordinates multidisciplinary response when required."
+      }
+    }
+  ],
+  "suggestedCaseload": 30,
+  "qualityIndicatorRefs": [],
+  "kpiRefs": [],
+  "crossRefs": {
+    "ukJag": [],
+    "uemsCesma": []
+  },
+  "_meta": {
+    "provenance": {
+      "type": "evideris-design",
+      "reason": "Atomic-skill decomposition of source-canonical ESGE EMR recommendations into trainee-assessable units. The recommendation is what ESGE publishes; the competency is what Evideris uses to score a trainee on. Not enumerated as objects in Tate EMR 2023; this competency frame is Evideris's design.",
+      "derived_from": [
+        "rec-emr-cln-r29-management-intraprocedural-bleeding",
+        "rec-emr-cln-r31-management-post-emr-bleeding",
+        "cur-emr-colon-2023"
+      ]
+    },
+    "encodedBy": "human:david",
+    "encodedAt": "2026-06-28"
+  }
+}

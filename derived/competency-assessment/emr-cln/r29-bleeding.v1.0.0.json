@@ -1,0 +1,31 @@
+{
+  "$schema": "https://schema.evideris.com/derived/schemas/competency-assessment.schema.json",
+  "$id": "https://schema.evideris.com/derived/competency-assessment/emr-cln/r29-bleeding.v1.0.0.json",
+  "lineageId": "ca-emr-cln-r29-bleeding",
+  "type": "competencyAssessment",
+  "version": "1.0.0",
+  "release": "r2026.07",
+  "supersedes": null,
+  "supersededBy": null,
+  "language": [
+    "en"
+  ],
+  "forRecommendation": "rec-emr-cln-r29-management-intraprocedural-bleeding",
+  "assessesCompetencies": [
+    {
+      "competencyRef": "c-emr-cln-bleeding-management"
+    }
+  ],
+  "_meta": {
+    "provenance": {
+      "type": "inferred-from-source",
+      "reason": "Evideris's inference: this source-canonical recommendation operationally assesses the listed atomic competencies. Inference based on the rec's statement+sub-item content. ESGE does not publish a rec\u2192competency map; this is Evideris's reading.",
+      "derived_from": [
+        "rec-emr-cln-r29-management-intraprocedural-bleeding",
+        "c-emr-cln-bleeding-management"
+      ]
+    },
+    "encodedBy": "human:david",
+    "encodedAt": "2026-06-28"
+  }
+}

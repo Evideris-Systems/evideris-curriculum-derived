@@ -1,0 +1,41 @@
+{
+  "$schema": "https://schema.evideris.com/derived/schemas/evidence-criterion.schema.json",
+  "$id": "https://schema.evideris.com/derived/evidence-criterion/emr-cln/preprocedure-information-evidence.v1.0.0.json",
+  "lineageId": "ec-emr-unit-preprocedure-information",
+  "type": "evidenceCriterion",
+  "version": "1.0.0",
+  "release": "r2026.07",
+  "supersedes": null,
+  "supersededBy": null,
+  "language": [
+    "en"
+  ],
+  "forStandard": "std-emr-unit-preprocedure-information",
+  "criteria": [
+    {
+      "description": {
+        "en": "Patient information sheet/leaflet specifically for EMR, including bowel-prep instructions."
+      },
+      "evidenceType": "document-upload",
+      "auditFrequency": "annual"
+    },
+    {
+      "description": {
+        "en": "Documented two-stage delivery workflow (initial discussion \u2192 reflection \u2192 confirmation)."
+      },
+      "evidenceType": "process-walkthrough",
+      "auditFrequency": "per-accreditation-cycle"
+    }
+  ],
+  "_meta": {
+    "provenance": {
+      "type": "evideris-design",
+      "reason": "Concrete evidence specs Evideris designed for the M3 Centre Accreditation evidence-pack generator. NOT published by ESGE \u2014 the source standard (text) is verbatim from Tate EMR 2023 Rec 2 sub-item, but the evidence-required list is Evideris's operationalisation of what compliance proof looks like.",
+      "derived_from": [
+        "std-emr-unit-preprocedure-information"
+      ]
+    },
+    "encodedBy": "human:david",
+    "encodedAt": "2026-06-28"
+  }
+}
