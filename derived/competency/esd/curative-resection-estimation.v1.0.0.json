@@ -1,0 +1,58 @@
+{
+  "$schema": "https://schema.evideris.com/derived/schemas/competency.schema.json",
+  "$id": "https://schema.evideris.com/derived/competency/esd/curative-resection-estimation.v1.0.0.json",
+  "lineageId": "c-esd-curative-resection-estimation",
+  "type": "competency",
+  "version": "1.0.0",
+  "release": "r2026.07",
+  "supersedes": null,
+  "supersededBy": null,
+  "language": [
+    "en"
+  ],
+  "modality": "m-esd",
+  "kind": "theoretical",
+  "title": {
+    "en": "Estimation of curative-resection probability"
+  },
+  "description": {
+    "en": "Ability to correctly estimate the probability of a curative resection based on lesion characteristics (location, size, morphology, virtual chromoendoscopy features) and to weigh the benefit/risk of ESD against alternatives."
+  },
+  "milestones": [
+    {
+      "level": "novice",
+      "criteria": {
+        "en": "Requires prompting to execute; recognises the need for estimation of curative-resection probability but cannot yet perform reliably."
+      }
+    },
+    {
+      "level": "competent",
+      "criteria": {
+        "en": "Performs estimation of curative-resection probability independently to source-defined standards."
+      },
+      "expectedAtCases": 25
+    },
+    {
+      "level": "expert",
+      "criteria": {
+        "en": "Teaches estimation of curative-resection probability to trainees; handles atypical/complex cases."
+      }
+    }
+  ],
+  "crossRefs": {
+    "ukJag": [],
+    "uemsCesma": []
+  },
+  "_meta": {
+    "provenance": {
+      "type": "evideris-design",
+      "reason": "Atomic-skill decomposition of source-canonical ESGE ESD 2019 recommendations into trainee-assessable units. ESD 2019 does not enumerate competencies as separate objects; this frame is Evideris's design.",
+      "derived_from": [
+        "rec-esd-r12-estimating-probability-of-curative-resection",
+        "cur-esd-2019"
+      ]
+    },
+    "encodedBy": "human:david",
+    "encodedAt": "2026-07-01"
+  }
+}

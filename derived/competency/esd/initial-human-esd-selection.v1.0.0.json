@@ -1,0 +1,58 @@
+{
+  "$schema": "https://schema.evideris.com/derived/schemas/competency.schema.json",
+  "$id": "https://schema.evideris.com/derived/competency/esd/initial-human-esd-selection.v1.0.0.json",
+  "lineageId": "c-esd-initial-human-esd-selection",
+  "type": "competency",
+  "version": "1.0.0",
+  "release": "r2026.07",
+  "supersedes": null,
+  "supersededBy": null,
+  "language": [
+    "en"
+  ],
+  "modality": "m-esd",
+  "kind": "procedural",
+  "title": {
+    "en": "Selection of first human ESD lesions"
+  },
+  "description": {
+    "en": "Correct case selection for the first 20 human ESD procedures: <30 mm, located in the antrum or rectum (never the colon). Recognises unsuitable lesions (colon, scarring, ulceration, high SMI risk)."
+  },
+  "milestones": [
+    {
+      "level": "novice",
+      "criteria": {
+        "en": "Requires prompting to execute; recognises the need for selection of first human esd lesions but cannot yet perform reliably."
+      }
+    },
+    {
+      "level": "competent",
+      "criteria": {
+        "en": "Performs selection of first human esd lesions independently to source-defined standards."
+      },
+      "expectedAtCases": 25
+    },
+    {
+      "level": "expert",
+      "criteria": {
+        "en": "Teaches selection of first human esd lesions to trainees; handles atypical/complex cases."
+      }
+    }
+  ],
+  "crossRefs": {
+    "ukJag": [],
+    "uemsCesma": []
+  },
+  "_meta": {
+    "provenance": {
+      "type": "evideris-design",
+      "reason": "Atomic-skill decomposition of source-canonical ESGE ESD 2019 recommendations into trainee-assessable units. ESD 2019 does not enumerate competencies as separate objects; this frame is Evideris's design.",
+      "derived_from": [
+        "rec-esd-r9-first-human-procedures-small-30mm-lesions-in-antrum-or-rectu",
+        "cur-esd-2019"
+      ]
+    },
+    "encodedBy": "human:david",
+    "encodedAt": "2026-07-01"
+  }
+}

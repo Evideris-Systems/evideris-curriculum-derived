@@ -1,0 +1,59 @@
+{
+  "$schema": "https://schema.evideris.com/derived/schemas/competency.schema.json",
+  "$id": "https://schema.evideris.com/derived/competency/esd/esd-theoretical-knowledge.v1.0.0.json",
+  "lineageId": "c-esd-esd-theoretical-knowledge",
+  "type": "competency",
+  "version": "1.0.0",
+  "release": "r2026.07",
+  "supersedes": null,
+  "supersededBy": null,
+  "language": [
+    "en"
+  ],
+  "modality": "m-esd",
+  "kind": "theoretical",
+  "title": {
+    "en": "ESD theoretical knowledge"
+  },
+  "description": {
+    "en": "Understanding of ESD indications, target organs, knife types, injection strategies, dissection principles (marking, injection, cutting, dissection), traction, and expected outcomes prior to hands-on training."
+  },
+  "milestones": [
+    {
+      "level": "novice",
+      "criteria": {
+        "en": "Requires prompting to execute; recognises the need for esd theoretical knowledge but cannot yet perform reliably."
+      }
+    },
+    {
+      "level": "competent",
+      "criteria": {
+        "en": "Performs esd theoretical knowledge independently to source-defined standards."
+      },
+      "expectedAtCases": 25
+    },
+    {
+      "level": "expert",
+      "criteria": {
+        "en": "Teaches esd theoretical knowledge to trainees; handles atypical/complex cases."
+      }
+    }
+  ],
+  "crossRefs": {
+    "ukJag": [],
+    "uemsCesma": []
+  },
+  "_meta": {
+    "provenance": {
+      "type": "evideris-design",
+      "reason": "Atomic-skill decomposition of source-canonical ESGE ESD 2019 recommendations into trainee-assessable units. ESD 2019 does not enumerate competencies as separate objects; this frame is Evideris's design.",
+      "derived_from": [
+        "rec-esd-r3-knowledge-of-esd-theory-before-and-during-training",
+        "rec-esd-r11-knowledge-of-instrumentation-technique-and-esu",
+        "cur-esd-2019"
+      ]
+    },
+    "encodedBy": "human:david",
+    "encodedAt": "2026-07-01"
+  }
+}

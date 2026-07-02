@@ -1,0 +1,58 @@
+{
+  "$schema": "https://schema.evideris.com/derived/schemas/competency.schema.json",
+  "$id": "https://schema.evideris.com/derived/competency/esd/animal-model-esd.v1.0.0.json",
+  "lineageId": "c-esd-animal-model-esd",
+  "type": "competency",
+  "version": "1.0.0",
+  "release": "r2026.07",
+  "supersedes": null,
+  "supersededBy": null,
+  "language": [
+    "en"
+  ],
+  "modality": "m-esd",
+  "kind": "procedural",
+  "title": {
+    "en": "ESD in animal/ex vivo models"
+  },
+  "description": {
+    "en": "Performance of at least 20 ESD procedures in animal/ex vivo models with a target of \u22658 en bloc complete resections in the last 10 cases without perforation prior to first human ESD."
+  },
+  "milestones": [
+    {
+      "level": "novice",
+      "criteria": {
+        "en": "Requires prompting to execute; recognises the need for esd in animal/ex vivo models but cannot yet perform reliably."
+      }
+    },
+    {
+      "level": "competent",
+      "criteria": {
+        "en": "Performs esd in animal/ex vivo models independently to source-defined standards."
+      },
+      "expectedAtCases": 25
+    },
+    {
+      "level": "expert",
+      "criteria": {
+        "en": "Teaches esd in animal/ex vivo models to trainees; handles atypical/complex cases."
+      }
+    }
+  ],
+  "crossRefs": {
+    "ukJag": [],
+    "uemsCesma": []
+  },
+  "_meta": {
+    "provenance": {
+      "type": "evideris-design",
+      "reason": "Atomic-skill decomposition of source-canonical ESGE ESD 2019 recommendations into trainee-assessable units. ESD 2019 does not enumerate competencies as separate objects; this frame is Evideris's design.",
+      "derived_from": [
+        "rec-esd-r6-animal-ex-vivo-practice-20-procedures-before-humans",
+        "cur-esd-2019"
+      ]
+    },
+    "encodedBy": "human:david",
+    "encodedAt": "2026-07-01"
+  }
+}

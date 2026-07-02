@@ -52,11 +52,55 @@
     {
       "lineageId": "c-emr-cln-thermal-margin-ablation",
       "version": "1.0.0"
+    },
+    {
+      "lineageId": "c-esd-esd-theoretical-knowledge",
+      "version": "1.0.0"
+    },
+    {
+      "lineageId": "c-esd-animal-model-esd",
+      "version": "1.0.0"
+    },
+    {
+      "lineageId": "c-esd-esd-adverse-event-management",
+      "version": "1.0.0"
+    },
+    {
+      "lineageId": "c-esd-initial-human-esd-selection",
+      "version": "1.0.0"
+    },
+    {
+      "lineageId": "c-esd-advanced-diagnostic-endoscopy",
+      "version": "1.0.0"
+    },
+    {
+      "lineageId": "c-esd-emr-proficiency-prereq",
+      "version": "1.0.0"
+    },
+    {
+      "lineageId": "c-esd-supervised-first-human-esd",
+      "version": "1.0.0"
+    },
+    {
+      "lineageId": "c-esd-supervised-observation-assist",
+      "version": "1.0.0"
+    },
+    {
+      "lineageId": "c-esd-curative-resection-estimation",
+      "version": "1.0.0"
+    },
+    {
+      "lineageId": "c-esd-histopathology-interpretation",
+      "version": "1.0.0"
     }
   ],
   "epas": [
     {
       "lineageId": "epa-emr-cln-independent-piecemeal",
+      "version": "1.0.0"
+    },
+    {
+      "lineageId": "epa-esd-independent-practice",
       "version": "1.0.0"
     }
   ],
@@ -122,6 +166,50 @@
     {
       "lineageId": "ca-emr-cln-r31-postbleed",
       "version": "1.0.0"
+    },
+    {
+      "lineageId": "ca-esd-r12",
+      "version": "1.0.0"
+    },
+    {
+      "lineageId": "ca-esd-r6",
+      "version": "1.0.0"
+    },
+    {
+      "lineageId": "ca-esd-r3",
+      "version": "1.0.0"
+    },
+    {
+      "lineageId": "ca-esd-r9",
+      "version": "1.0.0"
+    },
+    {
+      "lineageId": "ca-esd-r11",
+      "version": "1.0.0"
+    },
+    {
+      "lineageId": "ca-esd-r2",
+      "version": "1.0.0"
+    },
+    {
+      "lineageId": "ca-esd-r13",
+      "version": "1.0.0"
+    },
+    {
+      "lineageId": "ca-esd-r10",
+      "version": "1.0.0"
+    },
+    {
+      "lineageId": "ca-esd-r1",
+      "version": "1.0.0"
+    },
+    {
+      "lineageId": "ca-esd-r8",
+      "version": "1.0.0"
+    },
+    {
+      "lineageId": "ca-esd-r15",
+      "version": "1.0.0"
     }
   ],
   "scoringTools": [
@@ -143,7 +231,8 @@
     "1 EPA (epa-emr-cln-independent-piecemeal \u2014 forward-design by D. Tate as Curriculum committee member)",
     "3 evidence criteria (operationalises std-emr-unit-* compliance for Centre Accreditation evidence-pack generator)",
     "12 competency assessments (rec \u2192 atomic-competency mappings)",
-    "3 primary-source scoring tools (NICE / JNET / Sydney DMI \u2014 Tate EMR 2023 references by name; defined in primary citations)"
+    "3 primary-source scoring tools (NICE / JNET / Sydney DMI \u2014 Tate EMR 2023 references by name; defined in primary citations)",
+    "ESD 2019 derived layer: 10 competencies + 1 EPA (independent ESD practice) + 11 competency assessments. Zero new scoring tools."
   ],
   "majorBumps": [],
   "patchBumps": [],

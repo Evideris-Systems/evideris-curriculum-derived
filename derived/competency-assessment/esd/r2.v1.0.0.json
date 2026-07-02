@@ -1,0 +1,35 @@
+{
+  "$schema": "https://schema.evideris.com/derived/schemas/competency-assessment.schema.json",
+  "$id": "https://schema.evideris.com/derived/competency-assessment/esd/r2.v1.0.0.json",
+  "lineageId": "ca-esd-r2",
+  "type": "competencyAssessment",
+  "version": "1.0.0",
+  "release": "r2026.07",
+  "supersedes": null,
+  "supersededBy": null,
+  "language": [
+    "en"
+  ],
+  "forRecommendation": "rec-esd-r2-prior-training-required-emr-adverse-event-management",
+  "assessesCompetencies": [
+    {
+      "competencyRef": "c-esd-emr-proficiency-prereq"
+    },
+    {
+      "competencyRef": "c-esd-esd-adverse-event-management"
+    }
+  ],
+  "_meta": {
+    "provenance": {
+      "type": "inferred-from-source",
+      "reason": "Evideris's inference: this source-canonical ESD recommendation operationally assesses the listed atomic competencies. Inference based on the rec's statement. ESGE ESD 2019 does not publish a rec\u2192competency map; this is Evideris's reading.",
+      "derived_from": [
+        "rec-esd-r2-prior-training-required-emr-adverse-event-management",
+        "c-esd-emr-proficiency-prereq",
+        "c-esd-esd-adverse-event-management"
+      ]
+    },
+    "encodedBy": "human:david",
+    "encodedAt": "2026-07-01"
+  }
+}

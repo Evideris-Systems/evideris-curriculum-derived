@@ -1,0 +1,59 @@
+{
+  "$schema": "https://schema.evideris.com/derived/schemas/competency.schema.json",
+  "$id": "https://schema.evideris.com/derived/competency/esd/esd-adverse-event-management.v1.0.0.json",
+  "lineageId": "c-esd-esd-adverse-event-management",
+  "type": "competency",
+  "version": "1.0.0",
+  "release": "r2026.07",
+  "supersedes": null,
+  "supersededBy": null,
+  "language": [
+    "en"
+  ],
+  "modality": "m-esd",
+  "kind": "adverseEventManagement",
+  "title": {
+    "en": "ESD adverse-event management"
+  },
+  "description": {
+    "en": "Recognition and management of intra- and post-procedural bleeding and perforation during ESD: haemostatic techniques for active bleeding, closure techniques for perforation (clips, OTSCs, endoscopic suturing, stent placement for oesophageal perforation)."
+  },
+  "milestones": [
+    {
+      "level": "novice",
+      "criteria": {
+        "en": "Requires prompting to execute; recognises the need for esd adverse-event management but cannot yet perform reliably."
+      }
+    },
+    {
+      "level": "competent",
+      "criteria": {
+        "en": "Performs esd adverse-event management independently to source-defined standards."
+      },
+      "expectedAtCases": 25
+    },
+    {
+      "level": "expert",
+      "criteria": {
+        "en": "Teaches esd adverse-event management to trainees; handles atypical/complex cases."
+      }
+    }
+  ],
+  "crossRefs": {
+    "ukJag": [],
+    "uemsCesma": []
+  },
+  "_meta": {
+    "provenance": {
+      "type": "evideris-design",
+      "reason": "Atomic-skill decomposition of source-canonical ESGE ESD 2019 recommendations into trainee-assessable units. ESD 2019 does not enumerate competencies as separate objects; this frame is Evideris's design.",
+      "derived_from": [
+        "rec-esd-r2-prior-training-required-emr-adverse-event-management",
+        "rec-esd-r15-setting-requirements-inpatient-ward-surgical-backup-expert-p",
+        "cur-esd-2019"
+      ]
+    },
+    "encodedBy": "human:david",
+    "encodedAt": "2026-07-01"
+  }
+}

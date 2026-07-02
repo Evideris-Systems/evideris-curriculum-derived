@@ -1,0 +1,81 @@
+{
+  "$schema": "https://schema.evideris.com/derived/schemas/epa.schema.json",
+  "$id": "https://schema.evideris.com/derived/epa/esd/independent-esd-practice.v1.0.0.json",
+  "lineageId": "epa-esd-independent-practice",
+  "type": "epa",
+  "version": "1.0.0",
+  "release": "r2026.07",
+  "supersedes": null,
+  "supersededBy": null,
+  "language": [
+    "en"
+  ],
+  "derivedFromCurriculum": "cur-esd-2019",
+  "modality": "m-esd",
+  "title": {
+    "en": "Performs endoscopic submucosal dissection independently"
+  },
+  "description": {
+    "en": "End-to-end independent performance of ESD \u2014 from lesion characterisation and case selection through dissection, defect management, and interpretation of histopathology \u2014 to a standard a supervisor can entrust without direct oversight, at the minimum case load of 25 ESD procedures per year required by ESGE to maintain proficiency."
+  },
+  "competencyRefs": [
+    "c-esd-advanced-diagnostic-endoscopy",
+    "c-esd-emr-proficiency-prereq",
+    "c-esd-esd-theoretical-knowledge",
+    "c-esd-animal-model-esd",
+    "c-esd-supervised-observation-assist",
+    "c-esd-initial-human-esd-selection",
+    "c-esd-supervised-first-human-esd",
+    "c-esd-curative-resection-estimation",
+    "c-esd-histopathology-interpretation",
+    "c-esd-esd-adverse-event-management"
+  ],
+  "trustLevels": [
+    {
+      "value": 1,
+      "label": {
+        "en": "Observe only \u2014 no execution"
+      }
+    },
+    {
+      "value": 2,
+      "label": {
+        "en": "Act under proactive supervision \u2014 supervisor in room and engaged"
+      }
+    },
+    {
+      "value": 3,
+      "label": {
+        "en": "Act under reactive supervision \u2014 supervisor immediately available"
+      }
+    },
+    {
+      "value": 4,
+      "label": {
+        "en": "Act unsupervised"
+      }
+    },
+    {
+      "value": 5,
+      "label": {
+        "en": "May supervise others performing this EPA"
+      }
+    }
+  ],
+  "requiredExposure": {
+    "minProcedures": 25,
+    "minPeriodMonths": 12
+  },
+  "_meta": {
+    "provenance": {
+      "type": "evideris-design",
+      "reason": "Forward-design EPA bundling the 10 Evideris-derived ESD competencies into an entrustable unit of independent practice. ESGE ESD 2019 does not formally enumerate EPAs; this articulates what independent ESD looks like at the maintenance-of-proficiency threshold defined in R16.",
+      "derived_from": [
+        "cur-esd-2019",
+        "rec-esd-r16-minimum-case-load-25-esd-procedures-per-year"
+      ]
+    },
+    "encodedBy": "human:david",
+    "encodedAt": "2026-07-01"
+  }
+}

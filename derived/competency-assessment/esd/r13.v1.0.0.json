@@ -1,0 +1,31 @@
+{
+  "$schema": "https://schema.evideris.com/derived/schemas/competency-assessment.schema.json",
+  "$id": "https://schema.evideris.com/derived/competency-assessment/esd/r13.v1.0.0.json",
+  "lineageId": "ca-esd-r13",
+  "type": "competencyAssessment",
+  "version": "1.0.0",
+  "release": "r2026.07",
+  "supersedes": null,
+  "supersededBy": null,
+  "language": [
+    "en"
+  ],
+  "forRecommendation": "rec-esd-r13-interpretation-of-histopathology-of-the-esd-specimen",
+  "assessesCompetencies": [
+    {
+      "competencyRef": "c-esd-histopathology-interpretation"
+    }
+  ],
+  "_meta": {
+    "provenance": {
+      "type": "inferred-from-source",
+      "reason": "Evideris's inference: this source-canonical ESD recommendation operationally assesses the listed atomic competencies. Inference based on the rec's statement. ESGE ESD 2019 does not publish a rec\u2192competency map; this is Evideris's reading.",
+      "derived_from": [
+        "rec-esd-r13-interpretation-of-histopathology-of-the-esd-specimen",
+        "c-esd-histopathology-interpretation"
+      ]
+    },
+    "encodedBy": "human:david",
+    "encodedAt": "2026-07-01"
+  }
+}

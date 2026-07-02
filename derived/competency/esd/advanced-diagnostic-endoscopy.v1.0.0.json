@@ -1,0 +1,58 @@
+{
+  "$schema": "https://schema.evideris.com/derived/schemas/competency.schema.json",
+  "$id": "https://schema.evideris.com/derived/competency/esd/advanced-diagnostic-endoscopy.v1.0.0.json",
+  "lineageId": "c-esd-advanced-diagnostic-endoscopy",
+  "type": "competency",
+  "version": "1.0.0",
+  "release": "r2026.07",
+  "supersedes": null,
+  "supersededBy": null,
+  "language": [
+    "en"
+  ],
+  "modality": "m-esd",
+  "kind": "procedural",
+  "title": {
+    "en": "Advanced diagnostic endoscopy for lesion characterisation"
+  },
+  "description": {
+    "en": "Systematic pre-ESD lesion assessment: Paris classification, IPCL/Sano/simplified NBI/vessel-plus-surface/depth-predicting scores, Kudo/NICE/JNET pit and vascular patterns. Prerequisite to any ESD."
+  },
+  "milestones": [
+    {
+      "level": "novice",
+      "criteria": {
+        "en": "Requires prompting to execute; recognises the need for advanced diagnostic endoscopy for lesion characterisation but cannot yet perform reliably."
+      }
+    },
+    {
+      "level": "competent",
+      "criteria": {
+        "en": "Performs advanced diagnostic endoscopy for lesion characterisation independently to source-defined standards."
+      },
+      "expectedAtCases": 25
+    },
+    {
+      "level": "expert",
+      "criteria": {
+        "en": "Teaches advanced diagnostic endoscopy for lesion characterisation to trainees; handles atypical/complex cases."
+      }
+    }
+  ],
+  "crossRefs": {
+    "ukJag": [],
+    "uemsCesma": []
+  },
+  "_meta": {
+    "provenance": {
+      "type": "evideris-design",
+      "reason": "Atomic-skill decomposition of source-canonical ESGE ESD 2019 recommendations into trainee-assessable units. ESD 2019 does not enumerate competencies as separate objects; this frame is Evideris's design.",
+      "derived_from": [
+        "rec-esd-r1-advanced-endoscopy-diagnostic-practice-before-esd-training",
+        "cur-esd-2019"
+      ]
+    },
+    "encodedBy": "human:david",
+    "encodedAt": "2026-07-01"
+  }
+}
