@@ -1,0 +1,57 @@
+{
+  "$schema": "https://schema.evideris.com/derived/schemas/competency.schema.json",
+  "$id": "https://schema.evideris.com/derived/competency/poem-2/intraprocedural-adverse-event-management.v1.0.0.json",
+  "lineageId": "c-poem-2-intraprocedural-adverse-event-management",
+  "type": "competency",
+  "version": "1.0.0",
+  "release": "r2026.07",
+  "supersedes": null,
+  "supersededBy": null,
+  "language": [
+    "en"
+  ],
+  "modality": "m-poem",
+  "kind": "adverseEventManagement",
+  "title": {
+    "en": "Intraprocedural adverse-event management"
+  },
+  "description": {
+    "en": "Recognition and management of intraprocedural bleeding, capnoperitoneum, mucosal injury, and full-thickness perforation during POEM."
+  },
+  "milestones": [
+    {
+      "level": "novice",
+      "criteria": {
+        "en": "Requires prompting to execute; recognises the need for intraprocedural adverse-event management but cannot yet perform reliably."
+      }
+    },
+    {
+      "level": "competent",
+      "criteria": {
+        "en": "Performs intraprocedural adverse-event management independently to source-defined standards."
+      },
+      "expectedAtCases": 20
+    },
+    {
+      "level": "expert",
+      "criteria": {
+        "en": "Teaches intraprocedural adverse-event management to trainees; handles atypical/complex cases."
+      }
+    }
+  ],
+  "crossRefs": {
+    "ukJag": [],
+    "uemsCesma": []
+  },
+  "_meta": {
+    "provenance": {
+      "type": "evideris-design",
+      "reason": "Atomic-skill decomposition of the source-canonical ESGE POEM 2025 Part II recommendations into trainee-assessable units. The POEM curriculum enumerates recommendations and the PPAT scores procedures; this competency frame is Evideris's design for portfolio-level tracking.",
+      "derived_from": [
+        "cur-poem-2-2025"
+      ]
+    },
+    "encodedBy": "human:david",
+    "encodedAt": "2026-07-03"
+  }
+}

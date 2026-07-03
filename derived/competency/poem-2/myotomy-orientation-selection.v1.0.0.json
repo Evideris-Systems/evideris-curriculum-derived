@@ -1,0 +1,57 @@
+{
+  "$schema": "https://schema.evideris.com/derived/schemas/competency.schema.json",
+  "$id": "https://schema.evideris.com/derived/competency/poem-2/myotomy-orientation-selection.v1.0.0.json",
+  "lineageId": "c-poem-2-myotomy-orientation-selection",
+  "type": "competency",
+  "version": "1.0.0",
+  "release": "r2026.07",
+  "supersedes": null,
+  "supersededBy": null,
+  "language": [
+    "en"
+  ],
+  "modality": "m-poem",
+  "kind": "theoretical",
+  "title": {
+    "en": "Myotomy orientation selection"
+  },
+  "description": {
+    "en": "Judgement between anterior (1\u20132 o'clock) and posterior (5\u20136 o'clock) myotomy orientation informed by patient anatomy and prior interventions."
+  },
+  "milestones": [
+    {
+      "level": "novice",
+      "criteria": {
+        "en": "Requires prompting to execute; recognises the need for myotomy orientation selection but cannot yet perform reliably."
+      }
+    },
+    {
+      "level": "competent",
+      "criteria": {
+        "en": "Performs myotomy orientation selection independently to source-defined standards."
+      },
+      "expectedAtCases": 20
+    },
+    {
+      "level": "expert",
+      "criteria": {
+        "en": "Teaches myotomy orientation selection to trainees; handles atypical/complex cases."
+      }
+    }
+  ],
+  "crossRefs": {
+    "ukJag": [],
+    "uemsCesma": []
+  },
+  "_meta": {
+    "provenance": {
+      "type": "evideris-design",
+      "reason": "Atomic-skill decomposition of the source-canonical ESGE POEM 2025 Part II recommendations into trainee-assessable units. The POEM curriculum enumerates recommendations and the PPAT scores procedures; this competency frame is Evideris's design for portfolio-level tracking.",
+      "derived_from": [
+        "cur-poem-2-2025"
+      ]
+    },
+    "encodedBy": "human:david",
+    "encodedAt": "2026-07-03"
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "$schema": "https://schema.evideris.com/derived/schemas/epa.schema.json",
+  "$id": "https://schema.evideris.com/derived/epa/poem-2/independent-poem.v1.0.0.json",
+  "lineageId": "epa-poem-2-independent-practice",
+  "type": "epa",
+  "version": "1.0.0",
+  "release": "r2026.07",
+  "supersedes": null,
+  "supersededBy": null,
+  "language": [
+    "en"
+  ],
+  "derivedFromCurriculum": "cur-poem-2-2025",
+  "modality": "m-poem",
+  "title": {
+    "en": "Performs POEM independently"
+  },
+  "description": {
+    "en": "End-to-end independent performance of POEM \u2014 from case selection through preprocedure preparation, esophageal cleansing, mucosotomy, submucosal tunneling, myotomy, mucosal closure and postoperative care \u2014 to a standard a supervisor can entrust without direct oversight."
+  },
+  "competencyRefs": [
+    "c-poem-2-preprocedure-preparation",
+    "c-poem-2-esophageal-cleansing",
+    "c-poem-2-submucosal-injection",
+    "c-poem-2-mucosotomy",
+    "c-poem-2-submucosal-tunneling",
+    "c-poem-2-gej-recognition",
+    "c-poem-2-myotomy-technique",
+    "c-poem-2-myotomy-orientation-selection",
+    "c-poem-2-mucosal-closure",
+    "c-poem-2-intraprocedural-adverse-event-management",
+    "c-poem-2-postoperative-care",
+    "c-poem-2-case-selection"
+  ],
+  "trustLevels": [
+    {
+      "value": 1,
+      "label": {
+        "en": "Observe only \u2014 no execution"
+      }
+    },
+    {
+      "value": 2,
+      "label": {
+        "en": "Act under proactive supervision \u2014 supervisor in room and engaged"
+      }
+    },
+    {
+      "value": 3,
+      "label": {
+        "en": "Act under reactive supervision \u2014 supervisor immediately available"
+      }
+    },
+    {
+      "value": 4,
+      "label": {
+        "en": "Act unsupervised"
+      }
+    },
+    {
+      "value": 5,
+      "label": {
+        "en": "May supervise others performing this EPA"
+      }
+    }
+  ],
+  "requiredExposure": {
+    "minProcedures": 20,
+    "minPeriodMonths": 12
+  },
+  "_meta": {
+    "provenance": {
+      "type": "evideris-design",
+      "reason": "Forward-design EPA bundling the 12 Evideris-derived POEM competencies into an entrustable unit of independent practice.",
+      "derived_from": [
+        "cur-poem-2-2025"
+      ]
+    },
+    "encodedBy": "human:david",
+    "encodedAt": "2026-07-03"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "$schema": "https://schema.evideris.com/derived/schemas/competency-assessment.schema.json",
+  "$id": "https://schema.evideris.com/derived/competency-assessment/poem-2/r14-to-c-to-mucosotomy.v1.0.0.json",
+  "lineageId": "ca-poem-2-r14-to-c-to-mucosotomy",
+  "type": "competencyAssessment",
+  "version": "1.0.0",
+  "release": "r2026.07",
+  "supersedes": null,
+  "supersededBy": null,
+  "language": [
+    "en"
+  ],
+  "forRecommendation": "rec-poem-2-r14-to-create-the-mucosotomy-the-first-incision-should-be-made",
+  "assessesCompetencies": [
+    {
+      "competencyRef": "c-poem-2-mucosotomy"
+    }
+  ],
+  "_meta": {
+    "provenance": {
+      "type": "inferred-from-source",
+      "reason": "Evideris's inference: this source-canonical POEM II recommendation operationally assesses the listed atomic competency.",
+      "derived_from": [
+        "rec-poem-2-r14-to-create-the-mucosotomy-the-first-incision-should-be-made",
+        "c-poem-2-mucosotomy"
+      ]
+    },
+    "encodedBy": "human:david",
+    "encodedAt": "2026-07-03"
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "$schema": "https://schema.evideris.com/derived/schemas/competency.schema.json",
+  "$id": "https://schema.evideris.com/derived/competency/poem-2/postoperative-care.v1.0.0.json",
+  "lineageId": "c-poem-2-postoperative-care",
+  "type": "competency",
+  "version": "1.0.0",
+  "release": "r2026.07",
+  "supersedes": null,
+  "supersededBy": null,
+  "language": [
+    "en"
+  ],
+  "modality": "m-poem",
+  "kind": "communication",
+  "title": {
+    "en": "POEM postoperative care"
+  },
+  "description": {
+    "en": "Diet advancement (fluids day 1, soft day 3, normal day 7), symptom monitoring, decision-making about imaging or endoscopic re-look."
+  },
+  "milestones": [
+    {
+      "level": "novice",
+      "criteria": {
+        "en": "Requires prompting to execute; recognises the need for poem postoperative care but cannot yet perform reliably."
+      }
+    },
+    {
+      "level": "competent",
+      "criteria": {
+        "en": "Performs poem postoperative care independently to source-defined standards."
+      },
+      "expectedAtCases": 20
+    },
+    {
+      "level": "expert",
+      "criteria": {
+        "en": "Teaches poem postoperative care to trainees; handles atypical/complex cases."
+      }
+    }
+  ],
+  "crossRefs": {
+    "ukJag": [],
+    "uemsCesma": []
+  },
+  "_meta": {
+    "provenance": {
+      "type": "evideris-design",
+      "reason": "Atomic-skill decomposition of the source-canonical ESGE POEM 2025 Part II recommendations into trainee-assessable units. The POEM curriculum enumerates recommendations and the PPAT scores procedures; this competency frame is Evideris's design for portfolio-level tracking.",
+      "derived_from": [
+        "cur-poem-2-2025"
+      ]
+    },
+    "encodedBy": "human:david",
+    "encodedAt": "2026-07-03"
+  }
+}

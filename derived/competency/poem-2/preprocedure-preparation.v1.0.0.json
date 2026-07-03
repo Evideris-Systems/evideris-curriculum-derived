@@ -1,0 +1,58 @@
+{
+  "$schema": "https://schema.evideris.com/derived/schemas/competency.schema.json",
+  "$id": "https://schema.evideris.com/derived/competency/poem-2/preprocedure-preparation.v1.0.0.json",
+  "lineageId": "c-poem-2-preprocedure-preparation",
+  "type": "competency",
+  "version": "1.0.0",
+  "release": "r2026.07",
+  "supersedes": null,
+  "supersededBy": null,
+  "language": [
+    "en"
+  ],
+  "modality": "m-poem",
+  "kind": "procedural",
+  "title": {
+    "en": "POEM preprocedure preparation"
+  },
+  "description": {
+    "en": "Equipment checklist use, ESU setup, fasting compliance, antibiotic-prophylaxis judgement, and team-briefing before commencing POEM."
+  },
+  "milestones": [
+    {
+      "level": "novice",
+      "criteria": {
+        "en": "Requires prompting to execute; recognises the need for poem preprocedure preparation but cannot yet perform reliably."
+      }
+    },
+    {
+      "level": "competent",
+      "criteria": {
+        "en": "Performs poem preprocedure preparation independently to source-defined standards."
+      },
+      "expectedAtCases": 20
+    },
+    {
+      "level": "expert",
+      "criteria": {
+        "en": "Teaches poem preprocedure preparation to trainees; handles atypical/complex cases."
+      }
+    }
+  ],
+  "crossRefs": {
+    "ukJag": [],
+    "uemsCesma": []
+  },
+  "_meta": {
+    "provenance": {
+      "type": "evideris-design",
+      "reason": "Atomic-skill decomposition of the source-canonical ESGE POEM 2025 Part II recommendations into trainee-assessable units. The POEM curriculum enumerates recommendations and the PPAT scores procedures; this competency frame is Evideris's design for portfolio-level tracking.",
+      "derived_from": [
+        "rec-poem-2-r1-a-poem-equipment-checklist-should-be-used-before-comme",
+        "cur-poem-2-2025"
+      ]
+    },
+    "encodedBy": "human:david",
+    "encodedAt": "2026-07-03"
+  }
+}

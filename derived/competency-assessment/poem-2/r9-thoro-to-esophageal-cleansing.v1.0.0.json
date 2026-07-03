@@ -1,0 +1,31 @@
+{
+  "$schema": "https://schema.evideris.com/derived/schemas/competency-assessment.schema.json",
+  "$id": "https://schema.evideris.com/derived/competency-assessment/poem-2/r9-thoro-to-esophageal-cleansing.v1.0.0.json",
+  "lineageId": "ca-poem-2-r9-thoro-to-esophageal-cleansing",
+  "type": "competencyAssessment",
+  "version": "1.0.0",
+  "release": "r2026.07",
+  "supersedes": null,
+  "supersededBy": null,
+  "language": [
+    "en"
+  ],
+  "forRecommendation": "rec-poem-2-r9-thorough-esophageal-cleansing-before-mucosal-incision",
+  "assessesCompetencies": [
+    {
+      "competencyRef": "c-poem-2-esophageal-cleansing"
+    }
+  ],
+  "_meta": {
+    "provenance": {
+      "type": "inferred-from-source",
+      "reason": "Evideris's inference: this source-canonical POEM II recommendation operationally assesses the listed atomic competency.",
+      "derived_from": [
+        "rec-poem-2-r9-thorough-esophageal-cleansing-before-mucosal-incision",
+        "c-poem-2-esophageal-cleansing"
+      ]
+    },
+    "encodedBy": "human:david",
+    "encodedAt": "2026-07-03"
+  }
+}
