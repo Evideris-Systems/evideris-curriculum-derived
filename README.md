@@ -16,7 +16,12 @@ This repo holds the **Evideris-derived layer** that builds on top of the ESGE so
 
 [CC BY-NC-SA 4.0](./LICENSE) — share + adapt non-commercially with attribution + share-alike. Commercial licensing: contact Evideris Systems BV.
 
-The source-canonical schema is separately licenced [CC BY 4.0](https://github.com/Evideris-Systems/esge-curriculum-schema/blob/main/LICENSE) and is freely reusable.
+The sibling source repository separately licenses Evideris-authored schema,
+validation code and release metadata under
+[CC BY 4.0](https://github.com/Evideris-Systems/esge-curriculum-schema/blob/main/LICENSE).
+Encoded ESGE/Thieme publication content retains its original rights; neither
+repository's licence should be read as Evideris relicensing third-party source
+material.
 
 ## Layout
 
@@ -35,8 +40,7 @@ derived/
   evidence-criterion/<modality>/  # Evidence specs feeding Centre Accreditation
   competency-assessment/<modality>/  # Rec → competency cross-refs
   scoring-tool/               # Primary-source scoring tools (NICE, JNET, Sydney DMI)
-scripts/                      # validate.py + completeness.py + source-trace.py (derived mode)
-.cache/sources/               # Cached source PDFs (for source-trace against primary sources)
+scripts/                      # Schema, completeness and release-hash validation
 ```
 
 ## Verification
@@ -45,13 +49,23 @@ scripts/                      # validate.py + completeness.py + source-trace.py 
 make check
 ```
 
-Runs structural validation + completeness (every artifact must have `_meta.provenance` with type from the derived enum and a reason or DOI) + primary-source trace (for `verbatim-from-primary-source` artifacts, every text field must grep-match the cited DOI's source text).
+Runs schema meta-validation, JSON Schema validation, release path/hash/identity
+verification and completeness checks. Completeness requires every artifact to
+have an allowed `_meta.provenance` type, a substantive reason and a primary DOI
+for primary-source-derived content; it also rejects known placeholder markers.
+The repository does not currently run an automated primary-source text trace.
+
+Release members are bound to a repository-relative path and raw-file SHA-256. After changing membership or a released artifact, run `python3 scripts/update-release-hashes.py --write --root derived releases/<release>.json`; `make check` verifies the result.
 
 ## How this relates to the source-canonical layer
 
 - Source-canonical artifacts reference each other freely.
 - Derived artifacts reference source-canonical via `derived_from: [<source-canonical lineageId>]`.
 - Source-canonical artifacts NEVER reference derived artifacts (would create cyclic dependency on optional content).
+
+Release `_meta` describes assembly of the manifest and lists every source
+curriculum represented in the aggregate release. Each member artifact retains
+its own more specific provenance.
 
 When ESGE publishes a new curriculum, source-canonical gets the verbatim transcription (via the `esge-curriculum-autoupdate` Claude Code skill). The derived layer then gets a separate manual or assisted encoding pass to add Evideris's competencies/EPAs/evidence criteria mapping onto the new recs.
 
