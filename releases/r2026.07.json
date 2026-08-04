@@ -446,9 +446,11 @@
   "_meta": {
     "provenance": {
       "type": "evideris-design",
-      "reason": "Initial release of the Evideris-derived layer atop esge-curriculum-schema r2026.07. Per the 2026-06-27 correctness architecture: source-canonical content stays in the public ESGE schema repo (CC BY 4.0); Evideris's derivations live here (CC BY-NC-SA 4.0) with provenance honestly declared per artifact.",
+      "reason": "This metadata describes Evideris's assembly of the derived r2026.07 release manifest across EMR, ESD and POEM Part II. Each selected artifact retains its own detailed provenance; repository-level licensing and third-party rights are described in the README and release metadata.",
       "derived_from": [
-        "cur-emr-colon-2023"
+        "cur-emr-colon-2023",
+        "cur-esd-2019",
+        "cur-poem-2-2025"
       ]
     },
     "encodedBy": "human:david",

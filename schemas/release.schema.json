@@ -22,7 +22,10 @@
     "minorBumps": { "type": "array", "items": { "type": "string" } },
     "majorBumps": { "type": "array", "items": { "type": "string" } },
     "patchBumps": { "type": "array", "items": { "type": "string" } },
-    "_meta": { "$ref": "_common.schema.json#/$defs/metaBlock" }
+    "_meta": {
+      "description": "Authorship/provenance of the release manifest itself. For a multi-curriculum assembly, derived_from lists every represented source-canonical curriculum; member artifacts retain their own provenance and rights.",
+      "$ref": "_common.schema.json#/$defs/metaBlock"
+    }
   },
   "additionalProperties": false,
   "$defs": {
