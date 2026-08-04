@@ -11,219 +11,425 @@
   "competencies": [
     {
       "lineageId": "c-emr-cln-basic-colonoscopy-prereq",
-      "version": "1.0.0"
+      "version": "1.0.0",
+      "path": "derived/competency/emr-cln/basic-colonoscopy-prereq.v1.0.0.json",
+      "sha256": "7a1cfc1a3f11fbed5b7e4d475bca5f0d4d7ae76a77bf55d0b76a63844e50c596"
     },
     {
       "lineageId": "c-emr-cln-bleeding-management",
-      "version": "1.0.0"
+      "version": "1.0.0",
+      "path": "derived/competency/emr-cln/bleeding-management.v1.0.0.json",
+      "sha256": "561cab3d8b15a528559bcecda49e3d72f78fc459d132197189b7b441133ea672"
     },
     {
       "lineageId": "c-emr-cln-hemostasis-prereq",
-      "version": "1.0.0"
+      "version": "1.0.0",
+      "path": "derived/competency/emr-cln/hemostasis-prereq.v1.0.0.json",
+      "sha256": "67ed323864139f681ff65551527e6b1de85cd5d1c864903f8bfc6cd2d631e2b4"
     },
     {
       "lineageId": "c-emr-cln-lesion-assessment",
-      "version": "1.0.0"
+      "version": "1.0.0",
+      "path": "derived/competency/emr-cln/lesion-assessment.v1.0.0.json",
+      "sha256": "20a9d24bbffa9eaca508f62f596406ae6305afbcbb965603a2e21650dd8bd068"
     },
     {
       "lineageId": "c-emr-cln-patient-consent-discussion",
-      "version": "1.0.0"
+      "version": "1.0.0",
+      "path": "derived/competency/emr-cln/patient-consent-discussion.v1.0.0.json",
+      "sha256": "d51cf76f98aebd975c4ed8b445f6fe3e8656362bf460c2ad48466ec9f9e184e5"
     },
     {
       "lineageId": "c-emr-cln-post-emr-defect-inspection",
-      "version": "1.0.0"
+      "version": "1.0.0",
+      "path": "derived/competency/emr-cln/post-emr-defect-inspection.v1.0.0.json",
+      "sha256": "fa5f2b9e2388876a530e024288bb55f9d9d99930a5d391404796798f461fd54e"
     },
     {
       "lineageId": "c-emr-cln-small-polypectomy-prereq",
-      "version": "1.0.0"
+      "version": "1.0.0",
+      "path": "derived/competency/emr-cln/small-polypectomy-prereq.v1.0.0.json",
+      "sha256": "bd58e45abeb88361d4c0a84a57093bf2faf586c44144b49f5cdfb7aa932de38b"
     },
     {
       "lineageId": "c-emr-cln-smi-risk-stratification",
-      "version": "1.0.0"
+      "version": "1.0.0",
+      "path": "derived/competency/emr-cln/smi-risk-stratification.v1.0.0.json",
+      "sha256": "9044094cde65f00d43e6c2087fdff7f0dbeb2f8b17a65ed05c693afe202400fe"
     },
     {
       "lineageId": "c-emr-cln-snare-capture",
-      "version": "1.0.0"
+      "version": "1.0.0",
+      "path": "derived/competency/emr-cln/snare-capture.v1.0.0.json",
+      "sha256": "1fdb9ccde89aa1ae51d2510ee0a34f2647284a78e7ea1442e2f0bef8a803e355"
     },
     {
       "lineageId": "c-emr-cln-submucosal-injection",
-      "version": "1.0.0"
+      "version": "1.0.0",
+      "path": "derived/competency/emr-cln/submucosal-injection.v1.0.0.json",
+      "sha256": "8d8ef7d40b7e3b08b0f06c57d431ea5f722848412ecb96f01e67a5dab12f6781"
     },
     {
       "lineageId": "c-emr-cln-thermal-margin-ablation",
-      "version": "1.0.0"
+      "version": "1.0.0",
+      "path": "derived/competency/emr-cln/thermal-margin-ablation.v1.0.0.json",
+      "sha256": "7bb66f532fa76e5c282a55499649b40d527671c842bcda0d9ea039cbbef96828"
     },
     {
       "lineageId": "c-esd-esd-theoretical-knowledge",
-      "version": "1.0.0"
+      "version": "1.0.0",
+      "path": "derived/competency/esd/esd-theoretical-knowledge.v1.0.0.json",
+      "sha256": "615e06080aec0e4ed3acf5f49b4c8371102c3484cd14086297126a85ce97eb8c"
     },
     {
       "lineageId": "c-esd-animal-model-esd",
-      "version": "1.0.0"
+      "version": "1.0.0",
+      "path": "derived/competency/esd/animal-model-esd.v1.0.0.json",
+      "sha256": "561bf1f04a6a877c4b0ed5a8d53a1f5007030073c340917de996f9dfc75b2a4d"
     },
     {
       "lineageId": "c-esd-esd-adverse-event-management",
-      "version": "1.0.0"
+      "version": "1.0.0",
+      "path": "derived/competency/esd/esd-adverse-event-management.v1.0.0.json",
+      "sha256": "3d5ce9ae77233410330377424bd05bc695f37f03b21d0fe7ad98b8c67c373a75"
     },
     {
       "lineageId": "c-esd-initial-human-esd-selection",
-      "version": "1.0.0"
+      "version": "1.0.0",
+      "path": "derived/competency/esd/initial-human-esd-selection.v1.0.0.json",
+      "sha256": "d8cc6196df2b02c5d09ebf5260454f51589216b2f6ce109aff2909086f356786"
     },
     {
       "lineageId": "c-esd-advanced-diagnostic-endoscopy",
-      "version": "1.0.0"
+      "version": "1.0.0",
+      "path": "derived/competency/esd/advanced-diagnostic-endoscopy.v1.0.0.json",
+      "sha256": "d124d5cb41099c3dbf95a23f833737e9c9e11d03ff426b01bc2c80566d2df8a4"
     },
     {
       "lineageId": "c-esd-emr-proficiency-prereq",
-      "version": "1.0.0"
+      "version": "1.0.0",
+      "path": "derived/competency/esd/emr-proficiency-prereq.v1.0.0.json",
+      "sha256": "e8bc6836535e028fbcc7bcf2a69e6f0026d17122a2511db2e54827c1d4b9a6de"
     },
     {
       "lineageId": "c-esd-supervised-first-human-esd",
-      "version": "1.0.0"
+      "version": "1.0.0",
+      "path": "derived/competency/esd/supervised-first-human-esd.v1.0.0.json",
+      "sha256": "518e55e2bcdcdb3a2f0c189d737aceadcbfa8de705ba0eb5d54f512bdddbad27"
     },
     {
       "lineageId": "c-esd-supervised-observation-assist",
-      "version": "1.0.0"
+      "version": "1.0.0",
+      "path": "derived/competency/esd/supervised-observation-assist.v1.0.0.json",
+      "sha256": "9b395ef60d80c9a46174ecb8885856e5f7aef77bbd8f09534c187ea9794fb54f"
     },
     {
       "lineageId": "c-esd-curative-resection-estimation",
-      "version": "1.0.0"
+      "version": "1.0.0",
+      "path": "derived/competency/esd/curative-resection-estimation.v1.0.0.json",
+      "sha256": "fa24f693facc77135389a8b3834adebc3f41b16fd20489d9c25244e88de6b868"
     },
     {
       "lineageId": "c-esd-histopathology-interpretation",
-      "version": "1.0.0"
+      "version": "1.0.0",
+      "path": "derived/competency/esd/histopathology-interpretation.v1.0.0.json",
+      "sha256": "f6c60f6a9cadc57973e315ae4dd9da59151e089092c872dcc7c1bd7ad2f01422"
+    },
+    {
+      "lineageId": "c-poem-2-case-selection",
+      "version": "1.0.0",
+      "path": "derived/competency/poem-2/case-selection.v1.0.0.json",
+      "sha256": "8ea76c8131d660991e593e5f62708a1b1d0f9456539fa5761abf7acff932a931"
+    },
+    {
+      "lineageId": "c-poem-2-esophageal-cleansing",
+      "version": "1.0.0",
+      "path": "derived/competency/poem-2/esophageal-cleansing.v1.0.0.json",
+      "sha256": "bce15bab08fc3d7416bf8e608a6f605e36b64de666da0084117047f669675494"
+    },
+    {
+      "lineageId": "c-poem-2-gej-recognition",
+      "version": "1.0.0",
+      "path": "derived/competency/poem-2/gej-recognition.v1.0.0.json",
+      "sha256": "7f6fcc88a0ecb7757c6416f050046eafa9cba482719fd509603433b4af24034b"
+    },
+    {
+      "lineageId": "c-poem-2-intraprocedural-adverse-event-management",
+      "version": "1.0.0",
+      "path": "derived/competency/poem-2/intraprocedural-adverse-event-management.v1.0.0.json",
+      "sha256": "db1a04fe2d5b062b28881bbe25163859e61de0940f91dea3fb57d39e58a1a85a"
+    },
+    {
+      "lineageId": "c-poem-2-mucosal-closure",
+      "version": "1.0.0",
+      "path": "derived/competency/poem-2/mucosal-closure.v1.0.0.json",
+      "sha256": "1124c8fcf44507fdb8952deaf6b19c6a538447d055ced9870e7f7d77e8aaf612"
+    },
+    {
+      "lineageId": "c-poem-2-mucosotomy",
+      "version": "1.0.0",
+      "path": "derived/competency/poem-2/mucosotomy.v1.0.0.json",
+      "sha256": "9ca601ac08d9e829c03681c6d0f0b08ababf627d1c04ce607eee55ef1c54bec9"
+    },
+    {
+      "lineageId": "c-poem-2-myotomy-orientation-selection",
+      "version": "1.0.0",
+      "path": "derived/competency/poem-2/myotomy-orientation-selection.v1.0.0.json",
+      "sha256": "c7a2860d32dcb192fa2a419f0012991b5d6df4b64af02e354af1f6a52cd5d412"
+    },
+    {
+      "lineageId": "c-poem-2-myotomy-technique",
+      "version": "1.0.0",
+      "path": "derived/competency/poem-2/myotomy-technique.v1.0.0.json",
+      "sha256": "dcba60dc4eb762c5205aa8c6f42a18f07c218ddc767d19a6c01a2e0da55a0fad"
+    },
+    {
+      "lineageId": "c-poem-2-postoperative-care",
+      "version": "1.0.0",
+      "path": "derived/competency/poem-2/postoperative-care.v1.0.0.json",
+      "sha256": "b47f169c4a004fd10f27bb72facd1cec6d5ba44a004c42caf12ee032f7d3bab5"
+    },
+    {
+      "lineageId": "c-poem-2-preprocedure-preparation",
+      "version": "1.0.0",
+      "path": "derived/competency/poem-2/preprocedure-preparation.v1.0.0.json",
+      "sha256": "9e79c4237bb73155611b4081a995600d3163735d29815304b9c6b9916ad64ddc"
+    },
+    {
+      "lineageId": "c-poem-2-submucosal-injection",
+      "version": "1.0.0",
+      "path": "derived/competency/poem-2/submucosal-injection.v1.0.0.json",
+      "sha256": "45c202bb5687f478af06f127326e093f137c25d9482ccf341a26e4f6309f2c5d"
+    },
+    {
+      "lineageId": "c-poem-2-submucosal-tunneling",
+      "version": "1.0.0",
+      "path": "derived/competency/poem-2/submucosal-tunneling.v1.0.0.json",
+      "sha256": "29b6a7824f7ccaa9a4c88a682c40c9486c55934bb47621cab537fa828c36fba0"
     }
   ],
   "epas": [
     {
       "lineageId": "epa-emr-cln-independent-piecemeal",
-      "version": "1.0.0"
+      "version": "1.0.0",
+      "path": "derived/epa/emr-cln/independent-piecemeal.v1.0.0.json",
+      "sha256": "a181ae153d25b794c187d3934fc480b31026c699702af57ab423a0b52d3eb292"
     },
     {
       "lineageId": "epa-esd-independent-practice",
-      "version": "1.0.0"
+      "version": "1.0.0",
+      "path": "derived/epa/esd/independent-esd-practice.v1.0.0.json",
+      "sha256": "96d2347f610c372894cc71550c981108eb417ac29e0e515b5792fa972c81eb85"
+    },
+    {
+      "lineageId": "epa-poem-2-independent-practice",
+      "version": "1.0.0",
+      "path": "derived/epa/poem-2/independent-poem.v1.0.0.json",
+      "sha256": "142e30ba587875f721c080973b4eb442a4b4a27529557c5f2f1634a007a60493"
     }
   ],
   "evidenceCriteria": [
     {
       "lineageId": "ec-emr-unit-anticoagulant-protocols",
-      "version": "1.0.0"
+      "version": "1.0.0",
+      "path": "derived/evidence-criterion/emr-cln/anticoagulant-protocols-evidence.v1.0.0.json",
+      "sha256": "9eb2f9407bb5711a89ed86ef664a18ce302ad0391c754d92c83bdf441de88d68"
     },
     {
       "lineageId": "ec-emr-unit-preprocedure-information",
-      "version": "1.0.0"
+      "version": "1.0.0",
+      "path": "derived/evidence-criterion/emr-cln/preprocedure-information-evidence.v1.0.0.json",
+      "sha256": "5cefe71402d0e8dde2e83d468f9084b57264fa75739f859e2b0c405929c66d42"
     },
     {
       "lineageId": "ec-emr-unit-preprocedure-pathways",
-      "version": "1.0.0"
+      "version": "1.0.0",
+      "path": "derived/evidence-criterion/emr-cln/preprocedure-pathways-evidence.v1.0.0.json",
+      "sha256": "f086dea99822b28fc4c21917014db7192278133d6884889e8cb2af5c26d2adf8"
     }
   ],
   "competencyAssessments": [
     {
       "lineageId": "ca-emr-cln-r1-prereqs",
-      "version": "1.0.0"
+      "version": "1.0.0",
+      "path": "derived/competency-assessment/emr-cln/r1-prereqs.v1.0.0.json",
+      "sha256": "1f7e172779db14f0b6a7a12e4e2f1d40eaa88b29ec8f7bbe3d60ad957b13c7fb"
     },
     {
       "lineageId": "ca-emr-cln-r10-consent",
-      "version": "1.0.0"
+      "version": "1.0.0",
+      "path": "derived/competency-assessment/emr-cln/r10-consent.v1.0.0.json",
+      "sha256": "1a6bfd33a7865f8ad4dcf4ce1237e87780755975f22908fb1ab81e02bb9a15a1"
     },
     {
       "lineageId": "ca-emr-cln-r16-injection-cold",
-      "version": "1.0.0"
+      "version": "1.0.0",
+      "path": "derived/competency-assessment/emr-cln/r16-injection-cold.v1.0.0.json",
+      "sha256": "c39883f34cbd15ca9ad5c5f8fc040ddbb6247d955d35f0792f503c4a08ddbe91"
     },
     {
       "lineageId": "ca-emr-cln-r17-snare-cold",
-      "version": "1.0.0"
+      "version": "1.0.0",
+      "path": "derived/competency-assessment/emr-cln/r17-snare-cold.v1.0.0.json",
+      "sha256": "1c6ff778ce64ea939512953c436efae8234a0a793957fe3979d977b9df90cd7c"
     },
     {
       "lineageId": "ca-emr-cln-r18-defect-cold",
-      "version": "1.0.0"
+      "version": "1.0.0",
+      "path": "derived/competency-assessment/emr-cln/r18-defect-cold.v1.0.0.json",
+      "sha256": "52510311b5137d34e0b87da800652d069ccc00cb1914e2dff86b9060768dae90"
     },
     {
       "lineageId": "ca-emr-cln-r19-injection-hot",
-      "version": "1.0.0"
+      "version": "1.0.0",
+      "path": "derived/competency-assessment/emr-cln/r19-injection-hot.v1.0.0.json",
+      "sha256": "23ccd1faef643066563b2eb4375da6132da68dfc11ea3f79573c8c250e33d908"
     },
     {
       "lineageId": "ca-emr-cln-r20-snare-hot",
-      "version": "1.0.0"
+      "version": "1.0.0",
+      "path": "derived/competency-assessment/emr-cln/r20-snare-hot.v1.0.0.json",
+      "sha256": "0ceee4c3886362f69b5f018a05015a10f32d6b40a3c31e3ff7c3e3dd2038f2de"
     },
     {
       "lineageId": "ca-emr-cln-r22-defect-hot",
-      "version": "1.0.0"
+      "version": "1.0.0",
+      "path": "derived/competency-assessment/emr-cln/r22-defect-hot.v1.0.0.json",
+      "sha256": "7e44fd6d855ec9fd8daa57de38fc62b3db2e7a6e65154f368965a4a34e2b1f68"
     },
     {
       "lineageId": "ca-emr-cln-r23-thermal",
-      "version": "1.0.0"
+      "version": "1.0.0",
+      "path": "derived/competency-assessment/emr-cln/r23-thermal.v1.0.0.json",
+      "sha256": "2e2f6b56dc9f60c8231bb36cbb4410d3dce7a3beb7ff8deeed832af9446636f7"
     },
     {
       "lineageId": "ca-emr-cln-r29-bleeding",
-      "version": "1.0.0"
+      "version": "1.0.0",
+      "path": "derived/competency-assessment/emr-cln/r29-bleeding.v1.0.0.json",
+      "sha256": "9583ad9ed9de4278cfcb96385007bb528816eb27879f3d1ab277dfac1c2c561a"
     },
     {
       "lineageId": "ca-emr-cln-r3-smi",
-      "version": "1.0.0"
+      "version": "1.0.0",
+      "path": "derived/competency-assessment/emr-cln/r3-smi.v1.0.0.json",
+      "sha256": "935648e1dd6e0c1c67a9aa5e52d1f9ee29eecfa385ef437c2939e4480ef5e45e"
     },
     {
       "lineageId": "ca-emr-cln-r31-postbleed",
-      "version": "1.0.0"
+      "version": "1.0.0",
+      "path": "derived/competency-assessment/emr-cln/r31-postbleed.v1.0.0.json",
+      "sha256": "790a936e91ad626e85ea074cef1d6f50138624a111f355db12153ee01881e11a"
     },
     {
       "lineageId": "ca-esd-r12",
-      "version": "1.0.0"
+      "version": "1.0.0",
+      "path": "derived/competency-assessment/esd/r12.v1.0.0.json",
+      "sha256": "69f68c6073d52f9166b8e023ef42f1e4698f112e56644518a163dd422625726d"
     },
     {
       "lineageId": "ca-esd-r6",
-      "version": "1.0.0"
+      "version": "1.0.0",
+      "path": "derived/competency-assessment/esd/r6.v1.0.0.json",
+      "sha256": "eebb6fe877dbcef1762d5768eadfaefc69950ff11ca708a5336559a64d4c0353"
     },
     {
       "lineageId": "ca-esd-r3",
-      "version": "1.0.0"
+      "version": "1.0.0",
+      "path": "derived/competency-assessment/esd/r3.v1.0.0.json",
+      "sha256": "6221e96945218c3e7e01a9bb860ed8dd68d49ccea62de081a5e21ce1ac8e73cd"
     },
     {
       "lineageId": "ca-esd-r9",
-      "version": "1.0.0"
+      "version": "1.0.0",
+      "path": "derived/competency-assessment/esd/r9.v1.0.0.json",
+      "sha256": "5d4b91fc5bb829d0505a457d085c86903a4c643e051ebd526df750d318103b70"
     },
     {
       "lineageId": "ca-esd-r11",
-      "version": "1.0.0"
+      "version": "1.0.0",
+      "path": "derived/competency-assessment/esd/r11.v1.0.0.json",
+      "sha256": "53251baea124bd2f0fcd23ca3d2d21b6d448e545208de5134eb4be6f5a91ecbb"
     },
     {
       "lineageId": "ca-esd-r2",
-      "version": "1.0.0"
+      "version": "1.0.0",
+      "path": "derived/competency-assessment/esd/r2.v1.0.0.json",
+      "sha256": "0daf4d51a7e60e8c5c6a71fda80a108f58037b4c27400678d4468ef1326679fe"
     },
     {
       "lineageId": "ca-esd-r13",
-      "version": "1.0.0"
+      "version": "1.0.0",
+      "path": "derived/competency-assessment/esd/r13.v1.0.0.json",
+      "sha256": "1a73bc14a6aac3953d57f47e23a9eb455c5e108fd0c2448cee0e60b913b2f7b8"
     },
     {
       "lineageId": "ca-esd-r10",
-      "version": "1.0.0"
+      "version": "1.0.0",
+      "path": "derived/competency-assessment/esd/r10.v1.0.0.json",
+      "sha256": "6009f6771cb26054f98188e0086d4eeecb74d7cbb4df6ff8ee3f718e5514d8d0"
     },
     {
       "lineageId": "ca-esd-r1",
-      "version": "1.0.0"
+      "version": "1.0.0",
+      "path": "derived/competency-assessment/esd/r1.v1.0.0.json",
+      "sha256": "9f16bf08694fd435540105d0a9fce701a395a00a9200251d390f8f853aadc879"
     },
     {
       "lineageId": "ca-esd-r8",
-      "version": "1.0.0"
+      "version": "1.0.0",
+      "path": "derived/competency-assessment/esd/r8.v1.0.0.json",
+      "sha256": "db3a0271ddbcee5ba7d1cca03be369558c56dc0469b8a8cc1278c40738c920ce"
     },
     {
       "lineageId": "ca-esd-r15",
-      "version": "1.0.0"
+      "version": "1.0.0",
+      "path": "derived/competency-assessment/esd/r15.v1.0.0.json",
+      "sha256": "57fbb598bd147529a2fc4a5fc8e2b67b8cda554fe13c4d1d2df60ef9ac51239f"
+    },
+    {
+      "lineageId": "ca-poem-2-r1-a-poe-to-preprocedure-prepara",
+      "version": "1.0.0",
+      "path": "derived/competency-assessment/poem-2/r1-a-poe-to-preprocedure-prepara.v1.0.0.json",
+      "sha256": "3e3993b46e4b18a9ad0a0e76d72e6c532bbb92efec7c30276fbdf754f50423bd"
+    },
+    {
+      "lineageId": "ca-poem-2-r13-use--to-submucosal-injection",
+      "version": "1.0.0",
+      "path": "derived/competency-assessment/poem-2/r13-use--to-submucosal-injection.v1.0.0.json",
+      "sha256": "1b4e323ebf10cc504e410eb62b1b529b7305439773b63d7f97aceb45d0cbc443"
+    },
+    {
+      "lineageId": "ca-poem-2-r14-to-c-to-mucosotomy",
+      "version": "1.0.0",
+      "path": "derived/competency-assessment/poem-2/r14-to-c-to-mucosotomy.v1.0.0.json",
+      "sha256": "66b6a20e26b730ab6cd53775f072549a261ee1d857ae85a93abf0eab4e13a44e"
+    },
+    {
+      "lineageId": "ca-poem-2-r9-thoro-to-esophageal-cleansing",
+      "version": "1.0.0",
+      "path": "derived/competency-assessment/poem-2/r9-thoro-to-esophageal-cleansing.v1.0.0.json",
+      "sha256": "560bd29ec10239b140afbeb90b02fecce8f8b099d7869055eb92f0f96c5792af"
     }
   ],
   "scoringTools": [
     {
       "lineageId": "st-jnet",
-      "version": "1.0.0"
+      "version": "1.0.0",
+      "path": "derived/scoring-tool/jnet.v1.0.0.json",
+      "sha256": "0c6954a26f5cfc0112df8960e8da50c45ef4af43b86952b6017d3e2f6d22a188"
     },
     {
       "lineageId": "st-nice",
-      "version": "1.0.0"
+      "version": "1.0.0",
+      "path": "derived/scoring-tool/nice.v1.0.0.json",
+      "sha256": "ef48eb92309b339a0de0472a757df328e9ac77842037aa4576d151d0d10d0bec"
     },
     {
       "lineageId": "st-sydney-dmi",
-      "version": "1.0.0"
+      "version": "1.0.0",
+      "path": "derived/scoring-tool/sydney-dmi.v1.0.0.json",
+      "sha256": "e3274027e626c03a4a38b0cae932cc8c11b5fa8ac64e0f8d4f5bd1f1ea498096"
     }
   ],
   "minorBumps": [
@@ -232,7 +438,8 @@
     "3 evidence criteria (operationalises std-emr-unit-* compliance for Centre Accreditation evidence-pack generator)",
     "12 competency assessments (rec \u2192 atomic-competency mappings)",
     "3 primary-source scoring tools (NICE / JNET / Sydney DMI \u2014 Tate EMR 2023 references by name; defined in primary citations)",
-    "ESD 2019 derived layer: 10 competencies + 1 EPA (independent ESD practice) + 11 competency assessments. Zero new scoring tools."
+    "ESD 2019 derived layer: 10 competencies + 1 EPA (independent ESD practice) + 11 competency assessments. Zero new scoring tools.",
+    "POEM Part II derived layer: 12 competencies + 1 EPA (independent POEM practice) + 4 competency assessments."
   ],
   "majorBumps": [],
   "patchBumps": [],

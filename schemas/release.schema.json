@@ -28,10 +28,12 @@
   "$defs": {
     "artifactRef": {
       "type": "object",
-      "required": ["lineageId", "version"],
+      "required": ["lineageId", "version", "path", "sha256"],
       "properties": {
         "lineageId": { "$ref": "_common.schema.json#/$defs/lineageId" },
-        "version":   { "$ref": "_common.schema.json#/$defs/semverString" }
+        "version":   { "$ref": "_common.schema.json#/$defs/semverString" },
+        "path":      { "type": "string", "pattern": "^derived/[A-Za-z0-9._/-]+\\.json$" },
+        "sha256":    { "type": "string", "pattern": "^[a-f0-9]{64}$" }
       },
       "additionalProperties": false
     }

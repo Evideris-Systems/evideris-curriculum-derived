@@ -47,6 +47,8 @@ make check
 
 Runs structural validation + completeness (every artifact must have `_meta.provenance` with type from the derived enum and a reason or DOI) + primary-source trace (for `verbatim-from-primary-source` artifacts, every text field must grep-match the cited DOI's source text).
 
+Release members are bound to a repository-relative path and raw-file SHA-256. After changing membership or a released artifact, run `python3 scripts/update-release-hashes.py --write --root derived releases/<release>.json`; `make check` verifies the result.
+
 ## How this relates to the source-canonical layer
 
 - Source-canonical artifacts reference each other freely.
