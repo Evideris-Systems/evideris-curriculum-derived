@@ -16,7 +16,7 @@
     "en": "Performs endoscopic submucosal dissection independently"
   },
   "description": {
-    "en": "End-to-end independent performance of ESD \u2014 from lesion characterisation and case selection through dissection, defect management, and interpretation of histopathology \u2014 to a standard a supervisor can entrust without direct oversight, at the minimum case load of 25 ESD procedures per year required by ESGE to maintain proficiency."
+    "en": "End-to-end independent performance of ESD—from lesion characterisation and case selection through dissection, defect management, and interpretation of histopathology—to a standard a supervisor can entrust without direct oversight."
   },
   "competencyRefs": [
     "c-esd-advanced-diagnostic-endoscopy",
@@ -34,19 +34,19 @@
     {
       "value": 1,
       "label": {
-        "en": "Observe only \u2014 no execution"
+        "en": "Observe only — no execution"
       }
     },
     {
       "value": 2,
       "label": {
-        "en": "Act under proactive supervision \u2014 supervisor in room and engaged"
+        "en": "Act under proactive supervision — supervisor in room and engaged"
       }
     },
     {
       "value": 3,
       "label": {
-        "en": "Act under reactive supervision \u2014 supervisor immediately available"
+        "en": "Act under reactive supervision — supervisor immediately available"
       }
     },
     {
@@ -62,20 +62,15 @@
       }
     }
   ],
-  "requiredExposure": {
-    "minProcedures": 25,
-    "minPeriodMonths": 12
-  },
   "_meta": {
     "provenance": {
       "type": "evideris-design",
-      "reason": "Forward-design EPA bundling the 10 Evideris-derived ESD competencies into an entrustable unit of independent practice. ESGE ESD 2019 does not formally enumerate EPAs; this articulates what independent ESD looks like at the maintenance-of-proficiency threshold defined in R16.",
+      "reason": "Forward-design EPA bundling the 10 Evideris-derived ESD competencies into an entrustable unit of independent practice. ESGE ESD 2019 does not formally enumerate EPAs or define a caseload threshold for initial entrustment. Its 25-procedure annual threshold concerns maintenance of proficiency and is therefore not encoded as an EPA prerequisite.",
       "derived_from": [
-        "cur-esd-2019",
-        "rec-esd-r16-minimum-case-load-25-esd-procedures-per-year"
+        "cur-esd-2019"
       ]
     },
-    "encodedBy": "human:david",
-    "encodedAt": "2026-07-01"
+    "encodedBy": "other:codex-source-fidelity-repair",
+    "encodedAt": "2026-08-09"
   }
 }

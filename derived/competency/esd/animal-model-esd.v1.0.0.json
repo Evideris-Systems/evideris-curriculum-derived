@@ -16,7 +16,7 @@
     "en": "ESD in animal/ex vivo models"
   },
   "description": {
-    "en": "Performance of at least 20 ESD procedures in animal/ex vivo models with a target of \u22658 en bloc complete resections in the last 10 cases without perforation prior to first human ESD."
+    "en": "Performance of at least 20 ESD procedures in animal/ex vivo models with a target of ≥8 en bloc complete resections in the last 10 cases without perforation prior to first human ESD."
   },
   "milestones": [
     {
@@ -29,8 +29,7 @@
       "level": "competent",
       "criteria": {
         "en": "Performs esd in animal/ex vivo models independently to source-defined standards."
-      },
-      "expectedAtCases": 25
+      }
     },
     {
       "level": "expert",
@@ -52,7 +51,7 @@
         "cur-esd-2019"
       ]
     },
-    "encodedBy": "human:david",
-    "encodedAt": "2026-07-01"
+    "encodedBy": "other:codex-source-fidelity-repair",
+    "encodedAt": "2026-08-09"
   }
 }

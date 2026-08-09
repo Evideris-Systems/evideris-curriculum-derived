@@ -16,7 +16,7 @@
     "en": "Myotomy orientation selection"
   },
   "description": {
-    "en": "Judgement between anterior (1\u20132 o'clock) and posterior (5\u20136 o'clock) myotomy orientation informed by patient anatomy and prior interventions."
+    "en": "Judgement between anterior (1–2 o'clock) and posterior (5–6 o'clock) myotomy orientation informed by patient anatomy and prior interventions."
   },
   "milestones": [
     {
@@ -29,8 +29,7 @@
       "level": "competent",
       "criteria": {
         "en": "Performs myotomy orientation selection independently to source-defined standards."
-      },
-      "expectedAtCases": 20
+      }
     },
     {
       "level": "expert",
@@ -51,7 +50,7 @@
         "cur-poem-2-2025"
       ]
     },
-    "encodedBy": "human:david",
-    "encodedAt": "2026-07-03"
+    "encodedBy": "other:codex-source-fidelity-repair",
+    "encodedAt": "2026-08-09"
   }
 }

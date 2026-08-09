@@ -16,7 +16,7 @@
     "en": "Interpretation of ESD specimen histopathology"
   },
   "description": {
-    "en": "Correct interpretation of ESD histopathology \u2014 low risk (curative), local risk, and high risk (non-curative) resection categories per ESGE Guideline definitions, including depth of invasion, LVI, tumour budding, and margin status."
+    "en": "Correct interpretation of ESD histopathology — low risk (curative), local risk, and high risk (non-curative) resection categories per ESGE Guideline definitions, including depth of invasion, LVI, tumour budding, and margin status."
   },
   "milestones": [
     {
@@ -29,8 +29,7 @@
       "level": "competent",
       "criteria": {
         "en": "Performs interpretation of esd specimen histopathology independently to source-defined standards."
-      },
-      "expectedAtCases": 25
+      }
     },
     {
       "level": "expert",
@@ -52,7 +51,7 @@
         "cur-esd-2019"
       ]
     },
-    "encodedBy": "human:david",
-    "encodedAt": "2026-07-01"
+    "encodedBy": "other:codex-source-fidelity-repair",
+    "encodedAt": "2026-08-09"
   }
 }

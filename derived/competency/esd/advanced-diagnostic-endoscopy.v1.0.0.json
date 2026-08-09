@@ -29,8 +29,7 @@
       "level": "competent",
       "criteria": {
         "en": "Performs advanced diagnostic endoscopy for lesion characterisation independently to source-defined standards."
-      },
-      "expectedAtCases": 25
+      }
     },
     {
       "level": "expert",
@@ -52,7 +51,7 @@
         "cur-esd-2019"
       ]
     },
-    "encodedBy": "human:david",
-    "encodedAt": "2026-07-01"
+    "encodedBy": "other:codex-source-fidelity-repair",
+    "encodedAt": "2026-08-09"
   }
 }

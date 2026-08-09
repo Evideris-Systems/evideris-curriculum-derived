@@ -16,7 +16,7 @@
     "en": "Selection of first human ESD lesions"
   },
   "description": {
-    "en": "Correct case selection for the first 20 human ESD procedures: <30 mm, located in the antrum or rectum (never the colon). Recognises unsuitable lesions (colon, scarring, ulceration, high SMI risk)."
+    "en": "Correct case selection for the first 20 human ESD procedures: lesions smaller than 30 mm in the antrum or rectum. Initial human ESD training in the colon is not recommended; other unsuitable lesions include those with scarring, ulceration, or a high risk of submucosal invasion."
   },
   "milestones": [
     {
@@ -29,8 +29,7 @@
       "level": "competent",
       "criteria": {
         "en": "Performs selection of first human esd lesions independently to source-defined standards."
-      },
-      "expectedAtCases": 25
+      }
     },
     {
       "level": "expert",
@@ -52,7 +51,7 @@
         "cur-esd-2019"
       ]
     },
-    "encodedBy": "human:david",
-    "encodedAt": "2026-07-01"
+    "encodedBy": "other:codex-source-fidelity-repair",
+    "encodedAt": "2026-08-09"
   }
 }

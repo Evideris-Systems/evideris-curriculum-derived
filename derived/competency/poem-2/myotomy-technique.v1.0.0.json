@@ -16,7 +16,7 @@
     "en": "Myotomy technique"
   },
   "description": {
-    "en": "Cranial-to-caudal myotomy starting \u22652 cm below the mucosotomy site, extended 2\u20133 cm distal to the GEJ, tailored short vs long by disease type."
+    "en": "Cranial-to-caudal myotomy starting ≥2 cm below the mucosotomy site, extended 2–3 cm distal to the GEJ, tailored short vs long by disease type."
   },
   "milestones": [
     {
@@ -29,8 +29,7 @@
       "level": "competent",
       "criteria": {
         "en": "Performs myotomy technique independently to source-defined standards."
-      },
-      "expectedAtCases": 20
+      }
     },
     {
       "level": "expert",
@@ -51,7 +50,7 @@
         "cur-poem-2-2025"
       ]
     },
-    "encodedBy": "human:david",
-    "encodedAt": "2026-07-03"
+    "encodedBy": "other:codex-source-fidelity-repair",
+    "encodedAt": "2026-08-09"
   }
 }

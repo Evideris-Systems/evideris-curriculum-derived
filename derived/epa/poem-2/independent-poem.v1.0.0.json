@@ -16,7 +16,7 @@
     "en": "Performs POEM independently"
   },
   "description": {
-    "en": "End-to-end independent performance of POEM \u2014 from case selection through preprocedure preparation, esophageal cleansing, mucosotomy, submucosal tunneling, myotomy, mucosal closure and postoperative care \u2014 to a standard a supervisor can entrust without direct oversight."
+    "en": "End-to-end independent performance of POEM — from case selection through preprocedure preparation, esophageal cleansing, mucosotomy, submucosal tunneling, myotomy, mucosal closure and postoperative care — to a standard a supervisor can entrust without direct oversight."
   },
   "competencyRefs": [
     "c-poem-2-preprocedure-preparation",
@@ -36,19 +36,19 @@
     {
       "value": 1,
       "label": {
-        "en": "Observe only \u2014 no execution"
+        "en": "Observe only — no execution"
       }
     },
     {
       "value": 2,
       "label": {
-        "en": "Act under proactive supervision \u2014 supervisor in room and engaged"
+        "en": "Act under proactive supervision — supervisor in room and engaged"
       }
     },
     {
       "value": 3,
       "label": {
-        "en": "Act under reactive supervision \u2014 supervisor immediately available"
+        "en": "Act under reactive supervision — supervisor immediately available"
       }
     },
     {
@@ -64,19 +64,15 @@
       }
     }
   ],
-  "requiredExposure": {
-    "minProcedures": 20,
-    "minPeriodMonths": 12
-  },
   "_meta": {
     "provenance": {
       "type": "evideris-design",
-      "reason": "Forward-design EPA bundling the 12 Evideris-derived POEM competencies into an entrustable unit of independent practice.",
+      "reason": "Forward-design EPA bundling the 12 Evideris-derived POEM competencies into an entrustable unit of independent practice. ESGE POEM 2025 Part II does not define a 20-case or 12-month threshold for independent entrustment, so no such threshold is encoded here.",
       "derived_from": [
         "cur-poem-2-2025"
       ]
     },
-    "encodedBy": "human:david",
-    "encodedAt": "2026-07-03"
+    "encodedBy": "other:codex-source-fidelity-repair",
+    "encodedAt": "2026-08-09"
   }
 }
