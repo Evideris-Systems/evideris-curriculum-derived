@@ -16,7 +16,7 @@
     "en": "Observation + assist under an expert"
   },
   "description": {
-    "en": "Structured observation of \u226520 expert ESD procedures and assisting in \u22655 procedures at a tertiary referral centre before first human ESD as primary operator."
+    "en": "Structured observation of ≥20 expert ESD procedures and assisting in ≥5 procedures at a tertiary referral centre before first human ESD as primary operator."
   },
   "milestones": [
     {
@@ -29,8 +29,7 @@
       "level": "competent",
       "criteria": {
         "en": "Performs observation + assist under an expert independently to source-defined standards."
-      },
-      "expectedAtCases": 25
+      }
     },
     {
       "level": "expert",
@@ -52,7 +51,7 @@
         "cur-esd-2019"
       ]
     },
-    "encodedBy": "human:david",
-    "encodedAt": "2026-07-01"
+    "encodedBy": "other:codex-source-fidelity-repair",
+    "encodedAt": "2026-08-09"
   }
 }

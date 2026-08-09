@@ -16,7 +16,7 @@
     "en": "Mucosotomy technique"
   },
   "description": {
-    "en": "Initial mucosal incision at 45\u201380\u00b0 with a cutting mode, extension by 1.5\u20132 cm cranial-to-caudal in the planned tunnel axis with minimum ESU taps."
+    "en": "Initial mucosal incision at 45–80° with a cutting mode, extension by 1.5–2 cm cranial-to-caudal in the planned tunnel axis with minimum ESU taps."
   },
   "milestones": [
     {
@@ -29,8 +29,7 @@
       "level": "competent",
       "criteria": {
         "en": "Performs mucosotomy technique independently to source-defined standards."
-      },
-      "expectedAtCases": 20
+      }
     },
     {
       "level": "expert",
@@ -52,7 +51,7 @@
         "cur-poem-2-2025"
       ]
     },
-    "encodedBy": "human:david",
-    "encodedAt": "2026-07-03"
+    "encodedBy": "other:codex-source-fidelity-repair",
+    "encodedAt": "2026-08-09"
   }
 }

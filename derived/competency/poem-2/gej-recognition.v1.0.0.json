@@ -29,8 +29,7 @@
       "level": "competent",
       "criteria": {
         "en": "Performs gastroesophageal junction recognition independently to source-defined standards."
-      },
-      "expectedAtCases": 20
+      }
     },
     {
       "level": "expert",
@@ -51,7 +50,7 @@
         "cur-poem-2-2025"
       ]
     },
-    "encodedBy": "human:david",
-    "encodedAt": "2026-07-03"
+    "encodedBy": "other:codex-source-fidelity-repair",
+    "encodedAt": "2026-08-09"
   }
 }

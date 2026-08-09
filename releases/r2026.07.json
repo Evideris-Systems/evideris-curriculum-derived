@@ -79,133 +79,133 @@
       "lineageId": "c-esd-esd-theoretical-knowledge",
       "version": "1.0.0",
       "path": "derived/competency/esd/esd-theoretical-knowledge.v1.0.0.json",
-      "sha256": "615e06080aec0e4ed3acf5f49b4c8371102c3484cd14086297126a85ce97eb8c"
+      "sha256": "9da1da19e6229d913446f0f42d500c62cca2121cb45fd2cb6a5bf834c01d41f6"
     },
     {
       "lineageId": "c-esd-animal-model-esd",
       "version": "1.0.0",
       "path": "derived/competency/esd/animal-model-esd.v1.0.0.json",
-      "sha256": "561bf1f04a6a877c4b0ed5a8d53a1f5007030073c340917de996f9dfc75b2a4d"
+      "sha256": "2aa3151b2d30188f152f8075a42504cb24f4321772610b2b81885264a21470a3"
     },
     {
       "lineageId": "c-esd-esd-adverse-event-management",
       "version": "1.0.0",
       "path": "derived/competency/esd/esd-adverse-event-management.v1.0.0.json",
-      "sha256": "3d5ce9ae77233410330377424bd05bc695f37f03b21d0fe7ad98b8c67c373a75"
+      "sha256": "f4c151f0169ef7d0d3d54b7c530d64021bb0f11fc2bdaebcb35a6003e9dbb8bd"
     },
     {
       "lineageId": "c-esd-initial-human-esd-selection",
       "version": "1.0.0",
       "path": "derived/competency/esd/initial-human-esd-selection.v1.0.0.json",
-      "sha256": "d8cc6196df2b02c5d09ebf5260454f51589216b2f6ce109aff2909086f356786"
+      "sha256": "d6eccb25728ea962b508dbbdd32ea3babc4a05326b32d771c3b090b013955796"
     },
     {
       "lineageId": "c-esd-advanced-diagnostic-endoscopy",
       "version": "1.0.0",
       "path": "derived/competency/esd/advanced-diagnostic-endoscopy.v1.0.0.json",
-      "sha256": "d124d5cb41099c3dbf95a23f833737e9c9e11d03ff426b01bc2c80566d2df8a4"
+      "sha256": "49b50baa4185ea667a23985cda7e04381596a3ca0488d551ab0305af1898777c"
     },
     {
       "lineageId": "c-esd-emr-proficiency-prereq",
       "version": "1.0.0",
       "path": "derived/competency/esd/emr-proficiency-prereq.v1.0.0.json",
-      "sha256": "e8bc6836535e028fbcc7bcf2a69e6f0026d17122a2511db2e54827c1d4b9a6de"
+      "sha256": "fc65a2f2e451556aa922f39ac7bf1ff427e4ec046b8b4ec809aa6a8cee8ed2f8"
     },
     {
       "lineageId": "c-esd-supervised-first-human-esd",
       "version": "1.0.0",
       "path": "derived/competency/esd/supervised-first-human-esd.v1.0.0.json",
-      "sha256": "518e55e2bcdcdb3a2f0c189d737aceadcbfa8de705ba0eb5d54f512bdddbad27"
+      "sha256": "89897e247bf11fca875c550a8bd131c591158010691610db13c9fe4aa660e17c"
     },
     {
       "lineageId": "c-esd-supervised-observation-assist",
       "version": "1.0.0",
       "path": "derived/competency/esd/supervised-observation-assist.v1.0.0.json",
-      "sha256": "9b395ef60d80c9a46174ecb8885856e5f7aef77bbd8f09534c187ea9794fb54f"
+      "sha256": "91e356c2f93447a89a24527585d2203bcb021acdf963ae7de3f73638b459d3d4"
     },
     {
       "lineageId": "c-esd-curative-resection-estimation",
       "version": "1.0.0",
       "path": "derived/competency/esd/curative-resection-estimation.v1.0.0.json",
-      "sha256": "fa24f693facc77135389a8b3834adebc3f41b16fd20489d9c25244e88de6b868"
+      "sha256": "065e38bf2d316ae5bba47757b66a23560abff484bcc8c54044b6cc2c303cb4e1"
     },
     {
       "lineageId": "c-esd-histopathology-interpretation",
       "version": "1.0.0",
       "path": "derived/competency/esd/histopathology-interpretation.v1.0.0.json",
-      "sha256": "f6c60f6a9cadc57973e315ae4dd9da59151e089092c872dcc7c1bd7ad2f01422"
+      "sha256": "50475b54522c479a257ad8d3abf2895767d7b3d4f38da3cb6450f77c42fc2d36"
     },
     {
       "lineageId": "c-poem-2-case-selection",
       "version": "1.0.0",
       "path": "derived/competency/poem-2/case-selection.v1.0.0.json",
-      "sha256": "8ea76c8131d660991e593e5f62708a1b1d0f9456539fa5761abf7acff932a931"
+      "sha256": "7b4f2fabd493d37d5eabf8350a35d323c2b057be14c9834467b35a8273c21299"
     },
     {
       "lineageId": "c-poem-2-esophageal-cleansing",
       "version": "1.0.0",
       "path": "derived/competency/poem-2/esophageal-cleansing.v1.0.0.json",
-      "sha256": "bce15bab08fc3d7416bf8e608a6f605e36b64de666da0084117047f669675494"
+      "sha256": "b4555f3bd76a818b92b1ecf5bb846d4946f06b720ce4053eefc374fd900186c4"
     },
     {
       "lineageId": "c-poem-2-gej-recognition",
       "version": "1.0.0",
       "path": "derived/competency/poem-2/gej-recognition.v1.0.0.json",
-      "sha256": "7f6fcc88a0ecb7757c6416f050046eafa9cba482719fd509603433b4af24034b"
+      "sha256": "9b91483879164408ce3a16521b44a8b69d2635bf319813c7ecb1558ac28f808f"
     },
     {
       "lineageId": "c-poem-2-intraprocedural-adverse-event-management",
       "version": "1.0.0",
       "path": "derived/competency/poem-2/intraprocedural-adverse-event-management.v1.0.0.json",
-      "sha256": "db1a04fe2d5b062b28881bbe25163859e61de0940f91dea3fb57d39e58a1a85a"
+      "sha256": "0bdd619c0d710fc8b6fe0790e115255a6e79455857797653351fa56a937ceca3"
     },
     {
       "lineageId": "c-poem-2-mucosal-closure",
       "version": "1.0.0",
       "path": "derived/competency/poem-2/mucosal-closure.v1.0.0.json",
-      "sha256": "1124c8fcf44507fdb8952deaf6b19c6a538447d055ced9870e7f7d77e8aaf612"
+      "sha256": "20a1d33393533f30c8a22d656343ca95c111eb662ee740c26fd014dae15c25a6"
     },
     {
       "lineageId": "c-poem-2-mucosotomy",
       "version": "1.0.0",
       "path": "derived/competency/poem-2/mucosotomy.v1.0.0.json",
-      "sha256": "9ca601ac08d9e829c03681c6d0f0b08ababf627d1c04ce607eee55ef1c54bec9"
+      "sha256": "3809350d1c9071cfba173367a2ccb82f58bd78d8c766235e8544988baf4a1922"
     },
     {
       "lineageId": "c-poem-2-myotomy-orientation-selection",
       "version": "1.0.0",
       "path": "derived/competency/poem-2/myotomy-orientation-selection.v1.0.0.json",
-      "sha256": "c7a2860d32dcb192fa2a419f0012991b5d6df4b64af02e354af1f6a52cd5d412"
+      "sha256": "b8163d3cf97b7b35a59b739dedb920701a4bf7d7015b6563dc8095f23c26a108"
     },
     {
       "lineageId": "c-poem-2-myotomy-technique",
       "version": "1.0.0",
       "path": "derived/competency/poem-2/myotomy-technique.v1.0.0.json",
-      "sha256": "dcba60dc4eb762c5205aa8c6f42a18f07c218ddc767d19a6c01a2e0da55a0fad"
+      "sha256": "286308c9fde52f51bb372cb98f2065654d0e4cdc2bce1aa185b803ad577fc419"
     },
     {
       "lineageId": "c-poem-2-postoperative-care",
       "version": "1.0.0",
       "path": "derived/competency/poem-2/postoperative-care.v1.0.0.json",
-      "sha256": "b47f169c4a004fd10f27bb72facd1cec6d5ba44a004c42caf12ee032f7d3bab5"
+      "sha256": "5d73ab98f1e270c1fdf98128b564a07745dc6e5dd3eb1620d060072557cf22e4"
     },
     {
       "lineageId": "c-poem-2-preprocedure-preparation",
       "version": "1.0.0",
       "path": "derived/competency/poem-2/preprocedure-preparation.v1.0.0.json",
-      "sha256": "9e79c4237bb73155611b4081a995600d3163735d29815304b9c6b9916ad64ddc"
+      "sha256": "822407c6f83ee0d27dcf94eb8612dc6a96752a82da6cf9b0fd272ed3d397beb9"
     },
     {
       "lineageId": "c-poem-2-submucosal-injection",
       "version": "1.0.0",
       "path": "derived/competency/poem-2/submucosal-injection.v1.0.0.json",
-      "sha256": "45c202bb5687f478af06f127326e093f137c25d9482ccf341a26e4f6309f2c5d"
+      "sha256": "4c3e9ab053acebe25baf5142c87900f066cdfd6a6e865c68203e02b5a5ab5e34"
     },
     {
       "lineageId": "c-poem-2-submucosal-tunneling",
       "version": "1.0.0",
       "path": "derived/competency/poem-2/submucosal-tunneling.v1.0.0.json",
-      "sha256": "29b6a7824f7ccaa9a4c88a682c40c9486c55934bb47621cab537fa828c36fba0"
+      "sha256": "f81272a431bfec4e37dd1d1f5f62c9d50840c8bd10be483ffdba8b1c030e3dd8"
     }
   ],
   "epas": [
@@ -219,13 +219,13 @@
       "lineageId": "epa-esd-independent-practice",
       "version": "1.0.0",
       "path": "derived/epa/esd/independent-esd-practice.v1.0.0.json",
-      "sha256": "96d2347f610c372894cc71550c981108eb417ac29e0e515b5792fa972c81eb85"
+      "sha256": "aa246548ce5013a1ad68ac76c675edc47c4a66394a0f5b6e1e680c4f66fe3dfe"
     },
     {
       "lineageId": "epa-poem-2-independent-practice",
       "version": "1.0.0",
       "path": "derived/epa/poem-2/independent-poem.v1.0.0.json",
-      "sha256": "142e30ba587875f721c080973b4eb442a4b4a27529557c5f2f1634a007a60493"
+      "sha256": "d83d9e734efd4f985b85b8345c9f29e0c2c256b830f4f0d27f0a8ca40ae12858"
     }
   ],
   "evidenceCriteria": [
