@@ -13,8 +13,8 @@
     },
     "lineageId": {
       "type": "string",
-      "pattern": "^(c|epa|ec|ca|st|std|m|cur|rec|sec)-[a-z0-9]([a-z0-9-]*[a-z0-9])?$",
-      "description": "Stable identity across versions. Type-prefixed, kebab-case. Prefixes used in derived: c- competency, epa- EPA, ec- evidence criterion, ca- competency assessment, st- scoring tool (primary source). Also valid: m-/cur-/rec-/sec- references to source-canonical lineageIds."
+      "pattern": "^(c|epa|ec|ca|crm|st|std|m|cur|rec|sec|cat)-[a-z0-9]([a-z0-9-]*[a-z0-9])?$",
+      "description": "Stable identity across versions. Type-prefixed, kebab-case. Prefixes used in derived: c- competency, epa- EPA, ec- evidence criterion, ca- competency assessment, crm- CAT recommendation map, st- scoring tool (primary source). Also valid: m-/cur-/rec-/sec-/cat- references to source-canonical lineageIds."
     },
     "versionedUrl": {
       "type": "string",
@@ -41,7 +41,7 @@
         "$id":     { "$ref": "#/$defs/versionedUrl" },
         "lineageId": { "$ref": "#/$defs/lineageId" },
         "type": {
-          "enum": ["release", "competency", "epa", "evidenceCriterion", "competencyAssessment", "scoringTool"]
+          "enum": ["release", "competency", "epa", "evidenceCriterion", "competencyAssessment", "catRecommendationMap", "scoringTool"]
         },
         "version": { "$ref": "#/$defs/semverString" },
         "release": { "$ref": "#/$defs/calverRelease" },

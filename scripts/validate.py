@@ -15,6 +15,7 @@ TYPE_TO_SCHEMA = {
     "epa":                  "epa.schema.json",
     "evidenceCriterion":    "evidence-criterion.schema.json",
     "competencyAssessment": "competency-assessment.schema.json",
+    "catRecommendationMap": "cat-recommendation-map.schema.json",
     "scoringTool":          "scoring-tool.schema.json",
 }
 

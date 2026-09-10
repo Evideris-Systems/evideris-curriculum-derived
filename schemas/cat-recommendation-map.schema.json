@@ -1,0 +1,53 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://schema.evideris.com/derived/schemas/cat-recommendation-map.schema.json",
+  "title": "CAT Recommendation Map (CAT line → recommendation crosswalk)",
+  "description": "Maps each line of a source-canonical competency assessment tool (CAT) to the recommendation(s) it evidences.",
+  "$comment": "Evideris's reading of which recommendation each CAT line evidences, for CATs that ESGE published WITHOUT a recommendation column (GPAT). Where ESGE printed the column (PPAT), the join stays in the source-canonical CAT and no map exists. Display and traceability only; never a scoring input.",
+  "type": "object",
+  "allOf": [{ "$ref": "_common.schema.json#/$defs/envelope" }],
+  "required": ["type", "title", "forCat", "entries"],
+  "properties": {
+    "type":  { "const": "catRecommendationMap" },
+    "title": { "$ref": "_common.schema.json#/$defs/localeKeyedString" },
+    "forCat": {
+      "type": "object",
+      "required": ["lineageId", "version"],
+      "properties": {
+        "lineageId": { "type": "string", "pattern": "^cat-[a-z0-9]([a-z0-9-]*[a-z0-9])?$", "description": "Source-canonical cat-* lineageId" },
+        "version":   { "$ref": "_common.schema.json#/$defs/semverString" }
+      },
+      "additionalProperties": false
+    },
+    "alignsWithCurriculum": { "type": "string", "pattern": "^cur-[a-z0-9]([a-z0-9-]*[a-z0-9])?$", "description": "Optional source-canonical cur-* lineageId this crosswalk aligns with" },
+    "entries": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["catItem", "assessesRecommendations"],
+        "properties": {
+          "catItem": { "type": "string", "pattern": "^cat-[a-z0-9]([a-z0-9-]*[a-z0-9])?$", "description": "Source-canonical CAT line identifier" },
+          "assessesRecommendations": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "object",
+              "required": ["lineageId"],
+              "properties": {
+                "lineageId": { "type": "string", "pattern": "^rec-[a-z0-9]([a-z0-9-]*[a-z0-9])?$", "description": "Source-canonical rec-* lineageId" },
+                "subItem":   { "type": "string", "description": "Optional sub-item label of the recommendation" }
+              },
+              "additionalProperties": false
+            }
+          },
+          "note": { "$ref": "_common.schema.json#/$defs/localeKeyedString" }
+        },
+        "additionalProperties": false
+      }
+    },
+    "$schema": true, "$id": true, "lineageId": true, "version": true, "release": true,
+    "supersedes": true, "supersededBy": true, "language": true, "_meta": true
+  },
+  "additionalProperties": false
+}
