@@ -412,6 +412,14 @@
       "sha256": "560bd29ec10239b140afbeb90b02fecce8f8b099d7869055eb92f0f96c5792af"
     }
   ],
+  "catRecommendationMaps": [
+    {
+      "lineageId": "crm-gpat",
+      "version": "1.0.0",
+      "path": "derived/cat-recommendation-map/gpat.v1.0.0.json",
+      "sha256": "40c1d9467ec1b483bd51682e029d2765096bd3a836457953a4c7b779ab2976ed"
+    }
+  ],
   "scoringTools": [
     {
       "lineageId": "st-jnet",

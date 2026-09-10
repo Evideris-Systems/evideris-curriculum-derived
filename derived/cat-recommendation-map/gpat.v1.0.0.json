@@ -1,0 +1,46 @@
+{
+  "$schema": "https://schema.evideris.com/derived/schemas/cat-recommendation-map.schema.json",
+  "$id": "https://schema.evideris.com/derived/cat-recommendation-map/gpat.v1.0.0.json",
+  "lineageId": "crm-gpat",
+  "type": "catRecommendationMap",
+  "version": "1.0.0",
+  "release": "r2026.07",
+  "supersedes": null,
+  "supersededBy": null,
+  "language": [
+    "en"
+  ],
+  "title": {
+    "en": "GPAT line → EMR recommendation crosswalk (Evideris reading)"
+  },
+  "forCat": {
+    "lineageId": "cat-gpat",
+    "version": "1.0.0"
+  },
+  "alignsWithCurriculum": "cur-emr-colon-2023",
+  "entries": [
+    {
+      "catItem": "cat-gpat-appreciates-extent",
+      "assessesRecommendations": [
+        { "lineageId": "rec-emr-cln-r3-smi-assessment", "subItem": "i" },
+        { "lineageId": "rec-emr-cln-r3-smi-assessment", "subItem": "ii" },
+        { "lineageId": "rec-emr-cln-r3-smi-assessment", "subItem": "iii" }
+      ],
+      "note": {
+        "en": "Appreciating the full extent of the lesion is the practical expression of the R3 lesion-assessment sub-items (i–iii)."
+      }
+    }
+  ],
+  "_meta": {
+    "provenance": {
+      "type": "inferred-from-source",
+      "reason": "ESGE published GPAT (Tate et al. 2023, Table 4) without a recommendation column. This crosswalk is Evideris's reading, shown in the app as 'our reading' and never presented as ESGE's join. Moved here from esge-curriculum-schema esge/cat/gpat.v1.0.0.json (WP3).",
+      "derived_from": [
+        "cat-gpat",
+        "rec-emr-cln-r3-smi-assessment"
+      ]
+    },
+    "encodedBy": "human:david",
+    "encodedAt": "2026-09-10"
+  }
+}

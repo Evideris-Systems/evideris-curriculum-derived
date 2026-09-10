@@ -8,6 +8,7 @@ This repo holds the **Evideris-derived layer** that builds on top of the ESGE so
 - **EPAs** — Entrustable Professional Activities; bundles of competencies with ten-Cate trust levels 1–5
 - **Evidence criteria** — concrete evidence centres should provide to demonstrate compliance with a source standard (feeds the Centre Accreditation evidence-pack generator)
 - **Competency assessments** — cross-refs from source recommendations to the atomic competencies they imply
+- **CAT recommendation maps** — Evideris's reading of which recommendation each CAT line evidences, for CATs ESGE published without a recommendation column (GPAT); display and traceability only, never a scoring input
 - **Primary-source scoring tools** — clinical scoring systems (NICE classification, JNET, Sydney DMI) that source curricula reference by name but define elsewhere
 
 > ⚠️ **Provenance honesty:** Every artifact carries an explicit `_meta.provenance` block declaring `evideris-design`, `verbatim-from-primary-source`, `paraphrased-from-primary-source`, or `inferred-from-source`. There is no ambiguity about which work is ESGE's and which is Evideris's.
@@ -31,6 +32,7 @@ schemas/                      # JSON Schema 2020-12 validators (derived artifact
   epa.schema.json
   evidence-criterion.schema.json
   competency-assessment.schema.json
+  cat-recommendation-map.schema.json
   scoring-tool.schema.json
   release.schema.json
 releases/                     # r2026.07.json — manifest snapshot
@@ -39,6 +41,7 @@ derived/
   epa/<modality>/             # Entrustable Professional Activities
   evidence-criterion/<modality>/  # Evidence specs feeding Centre Accreditation
   competency-assessment/<modality>/  # Rec → competency cross-refs
+  cat-recommendation-map/       # CAT line → recommendation crosswalks (Evideris reading)
   scoring-tool/               # Primary-source scoring tools (NICE, JNET, Sydney DMI)
 scripts/                      # Schema, completeness and release-hash validation
 ```
