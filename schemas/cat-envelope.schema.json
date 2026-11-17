@@ -1,0 +1,55 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://schema.evideris.com/derived/schemas/cat-envelope.schema.json",
+  "title": "Derived CAT envelope (verbatim payload pinned by sha256)",
+  "description": "A derived-layer competency assessment tool. The envelope carries identity, layer attribution and rights; the CAT definition itself is a verbatim payload under derived/cat/assets/, pinned by sha256.",
+  "type": "object",
+  "allOf": [{ "$ref": "_common.schema.json#/$defs/envelope" }],
+  "required": ["lineageId", "version", "type", "format", "payload", "layers", "rights"],
+  "properties": {
+    "type":   { "const": "cat" },
+    "format": { "type": "string", "minLength": 1 },
+    "title":  { "$ref": "_common.schema.json#/$defs/localeKeyedString" },
+    "basedOn": {
+      "type": "object",
+      "required": ["layer", "lineageId", "version"],
+      "properties": {
+        "layer":     { "type": "string" },
+        "lineageId": { "$ref": "_common.schema.json#/$defs/lineageId" },
+        "version":   { "$ref": "_common.schema.json#/$defs/semverString" }
+      },
+      "additionalProperties": false
+    },
+    "payload": {
+      "type": "object",
+      "required": ["path", "mediaType", "sha256"],
+      "properties": {
+        "path":      { "type": "string", "pattern": "^derived/cat/assets/[A-Za-z0-9._-]+$" },
+        "mediaType": { "type": "string" },
+        "sha256":    { "type": "string", "pattern": "^[a-f0-9]{64}$" }
+      },
+      "additionalProperties": false
+    },
+    "layers": {
+      "type": "object",
+      "required": ["published", "derived"],
+      "properties": {
+        "published": { "type": "string" },
+        "derived":   { "type": "string" }
+      },
+      "additionalProperties": false
+    },
+    "rights": {
+      "type": "object",
+      "required": ["status", "reason"],
+      "properties": {
+        "status": { "enum": ["pending", "confirmed", "owned"] },
+        "reason": { "type": "string", "minLength": 10 }
+      },
+      "additionalProperties": false
+    },
+    "$schema": true, "$id": true, "lineageId": true, "version": true, "release": true,
+    "supersedes": true, "supersededBy": true, "language": true, "_meta": true
+  },
+  "additionalProperties": false
+}

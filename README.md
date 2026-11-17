@@ -10,6 +10,7 @@ This repo holds the **Evideris-derived layer** that builds on top of the ESGE so
 - **Competency assessments** — cross-refs from source recommendations to the atomic competencies they imply
 - **CAT recommendation maps** — Evideris's reading of which recommendation each CAT line evidences, for CATs ESGE published without a recommendation column (GPAT); display and traceability only, never a scoring input
 - **Primary-source scoring tools** — clinical scoring systems (NICE classification, JNET, Sydney DMI) that source curricula reference by name but define elsewhere
+- **CATs** (`cats` release group) — derived competency assessment tools (e.g. GPAT v1.1): an envelope in `derived/cat/` with layer attribution and a `rights` status (`pending` | `confirmed` | `owned`), pinning a verbatim payload in `derived/cat/assets/` by sha256 (copied byte-for-byte, never re-serialised)
 
 > ⚠️ **Provenance honesty:** Every artifact carries an explicit `_meta.provenance` block declaring `evideris-design`, `verbatim-from-primary-source`, `paraphrased-from-primary-source`, or `inferred-from-source`. There is no ambiguity about which work is ESGE's and which is Evideris's.
 
@@ -34,6 +35,7 @@ schemas/                      # JSON Schema 2020-12 validators (derived artifact
   competency-assessment.schema.json
   cat-recommendation-map.schema.json
   scoring-tool.schema.json
+  cat-envelope.schema.json
   release.schema.json
 releases/                     # r2026.07.json — manifest snapshot
 derived/
@@ -43,6 +45,8 @@ derived/
   competency-assessment/<modality>/  # Rec → competency cross-refs
   cat-recommendation-map/       # CAT line → recommendation crosswalks (Evideris reading)
   scoring-tool/               # Primary-source scoring tools (NICE, JNET, Sydney DMI)
+  cat/                        # Derived CAT envelopes (rights field)
+    assets/                   # Verbatim CAT payloads, pinned by sha256
 scripts/                      # Schema, completeness and release-hash validation
 ```
 

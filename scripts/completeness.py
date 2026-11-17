@@ -47,6 +47,9 @@ def check(path: Path) -> list[str]:
 
 def main(argv: list[str]) -> int:
     targets = [Path(t).resolve() for t in argv] if argv else sorted(list((ROOT / "derived").rglob("*.json")) + list((ROOT / "releases").rglob("*.json")))
+    # Verbatim CAT payloads are pinned bytes without _meta; their envelope carries provenance.
+    assets = (ROOT / "derived" / "cat" / "assets").resolve()
+    targets = [p for p in targets if assets not in p.resolve().parents]
     if not targets:
         print("completeness (derived): nothing to check"); return 0
     all_errs = []
