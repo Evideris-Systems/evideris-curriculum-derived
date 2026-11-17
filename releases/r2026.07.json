@@ -440,6 +440,14 @@
       "sha256": "e3274027e626c03a4a38b0cae932cc8c11b5fa8ac64e0f8d4f5bd1f1ea498096"
     }
   ],
+  "cats": [
+    {
+      "lineageId": "cat-gpat",
+      "version": "1.1.0",
+      "path": "derived/cat/gpat.v1.1.0.json",
+      "sha256": "295da48cf84ca3242f2fce2fa73a8dba912796a03a7d7f1f843c518ddb223638"
+    }
+  ],
   "minorBumps": [
     "Initial derived layer: 11 competencies (Evideris's atomic-skill decomposition of Tate EMR 2023 recs)",
     "1 EPA (epa-emr-cln-independent-piecemeal \u2014 forward-design by D. Tate as Curriculum committee member)",

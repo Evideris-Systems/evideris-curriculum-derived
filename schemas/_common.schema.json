@@ -41,7 +41,7 @@
         "$id":     { "$ref": "#/$defs/versionedUrl" },
         "lineageId": { "$ref": "#/$defs/lineageId" },
         "type": {
-          "enum": ["release", "competency", "epa", "evidenceCriterion", "competencyAssessment", "catRecommendationMap", "scoringTool"]
+          "enum": ["release", "competency", "epa", "evidenceCriterion", "competencyAssessment", "catRecommendationMap", "scoringTool", "cat"]
         },
         "version": { "$ref": "#/$defs/semverString" },
         "release": { "$ref": "#/$defs/calverRelease" },

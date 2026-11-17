@@ -20,6 +20,7 @@
     "competencyAssessments": { "type": "array", "items": { "$ref": "#/$defs/artifactRef" } },
     "catRecommendationMaps": { "type": "array", "items": { "$ref": "#/$defs/artifactRef" } },
     "scoringTools":          { "type": "array", "items": { "$ref": "#/$defs/artifactRef" } },
+    "cats":                  { "type": "array", "items": { "$ref": "#/$defs/artifactRef" } },
     "minorBumps": { "type": "array", "items": { "type": "string" } },
     "majorBumps": { "type": "array", "items": { "type": "string" } },
     "patchBumps": { "type": "array", "items": { "type": "string" } },

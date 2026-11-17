@@ -1,0 +1,28 @@
+{
+  "$schema": "https://schema.evideris.com/derived/schemas/cat-envelope.schema.json",
+  "$id": "https://schema.evideris.com/derived/cat/gpat.v1.1.0.json",
+  "lineageId": "cat-gpat",
+  "version": "1.1.0",
+  "release": "r2026.07",
+  "type": "cat",
+  "format": "gpat-v1.1",
+  "language": ["en"],
+  "title": { "en": "GPAT v1.1 — entrustment scale, item 22 and ex vivo model setting (ESGE EMR certification)" },
+  "supersedes": null,
+  "basedOn": { "layer": "source-canonical", "lineageId": "cat-gpat", "version": "1.0.0" },
+  "payload": { "path": "derived/cat/assets/gpat-v1.1.definition.json", "mediaType": "application/json", "sha256": "033c0ee6828299e388dee9fe1c907afcd7ce9ddddf756a260b0dd5674e0900d5" },
+  "layers": {
+    "published": "Items 1–21: labels, descriptors at 1 and 5, Mandatory hot/cold — GPAT manuscript (De Crem … Tate, Endoscopy; final citation to confirm), Table 1",
+    "derived": "ESGE Certification Taskforce additions (Oct 2026): entrustment scale, item 22, Model column and notes, sentinels, pass rule. The pass rule here is reference only; the certification threshold is set by the approved certification manifest."
+  },
+  "rights": { "status": "pending", "reason": "GPAT v1.1 descriptor publication status unconfirmed (De Crem … Tate, Endoscopy; final citation to confirm): not for an APPROVED production bundle until confirmed" },
+  "_meta": {
+    "provenance": {
+      "type": "inferred-from-source",
+      "reason": "Derived from source: CAT app lib/gpat/v1.1 (GIEQs-Foundation/cat PR #8), exported 2026-10-25; approved by David Tate 2026-11-17. Payload copied byte-for-byte and pinned by sha256.",
+      "derived_from": ["cat-gpat"]
+    },
+    "encodedBy": "human:david",
+    "encodedAt": "2026-11-17"
+  }
+}

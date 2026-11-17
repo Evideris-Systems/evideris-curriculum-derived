@@ -1,0 +1,568 @@
+{
+  "id": "gpat",
+  "version": "1.1.0",
+  "source": "CAT app lib/gpat/v1.1 (GIEQs-Foundation/cat PR #8, branch feature/gpat-v1.1)",
+  "layers": {
+    "published": "GPAT v1 items 1–21: labels, descriptors at 1 and 5, Mandatory hot/cold (GPAT manuscript, Table 1)",
+    "derived": "ESGE Certification Taskforce additions (Oct 2026): entrustment scale, item 22, Model column, model notes, sentinels, pass rule"
+  },
+  "scale": {
+    "type": "entrustment",
+    "anchors": [
+      {
+        "value": 1,
+        "label": "1 - Performed for them (assessor took over)"
+      },
+      {
+        "value": 2,
+        "label": "2 - Directed throughout"
+      },
+      {
+        "value": 3,
+        "label": "3 - Active supervision (coaching, no takeover)"
+      },
+      {
+        "value": 4,
+        "label": "4 - Passive supervision (available, not needed)"
+      },
+      {
+        "value": 5,
+        "label": "5 - Independent, no supervision required"
+      }
+    ],
+    "layer": "derived"
+  },
+  "items": [
+    {
+      "id": "tipControl",
+      "number": "1",
+      "domain": "Global competencies",
+      "label": "Tip control",
+      "descriptor1": "Uncontrolled, shaky and undirected",
+      "descriptor5": "Controlled, stable and purposeful",
+      "mandatory": {
+        "hot": true,
+        "cold": true
+      },
+      "model": "yes",
+      "modelNote": null,
+      "modelConditional": false,
+      "layer": "published"
+    },
+    {
+      "id": "extent",
+      "number": "2",
+      "domain": "Global competencies",
+      "label": "Fully appreciates/demonstrates extent of the polyp to be resected",
+      "descriptor1": "Focusses on one area, does not demonstrate appreciation of the entire polyp",
+      "descriptor5": "Clearly appreciates entire extent of polyp; approach and resection reflect this",
+      "mandatory": {
+        "hot": true,
+        "cold": true
+      },
+      "model": "limited",
+      "modelNote": "The extent is the marked perimeter.",
+      "modelConditional": false,
+      "layer": "published"
+    },
+    {
+      "id": "positioning",
+      "number": "3",
+      "domain": "Global competencies",
+      "label": "Positioning with respect to the polyp",
+      "descriptor1": "Not at 6 o’clock, far from the colonoscope, fluid covering lesion (poor use of gravity)",
+      "descriptor5": "Lesion at or near 6 o’clock, close, fluid away from the lesion (good use of gravity)",
+      "mandatory": {
+        "hot": true,
+        "cold": true
+      },
+      "model": "limited",
+      "modelNote": "Scope rotation, distance and fluid are scored; patient repositioning cannot be reproduced.",
+      "modelConditional": false,
+      "layer": "published"
+    },
+    {
+      "id": "appropriateTechnique",
+      "number": "4",
+      "domain": "Global competencies",
+      "label": "Technique selected is appropriate for the polyp",
+      "descriptor1": "No clear need for en-bloc if selected, lesion unsuitable for cold snare, no hot snare <10mm",
+      "descriptor5": "Correct decision for en-bloc vs piecemeal/hot vs. cold",
+      "mandatory": {
+        "hot": true,
+        "cold": true
+      },
+      "model": "no",
+      "modelNote": null,
+      "modelConditional": false,
+      "layer": "published"
+    },
+    {
+      "id": "injectionPlane",
+      "number": "5",
+      "domain": "Injection technique",
+      "label": "Injection is performed in the correct plane",
+      "descriptor1": "Injection infrequently results in sustained submucosal lifting (transmural/intramucosal)",
+      "descriptor5": "The submucosal plane is quickly found and rapidly results in sustained mucosal lifting",
+      "mandatory": {
+        "hot": true,
+        "cold": false
+      },
+      "model": "yes",
+      "modelNote": "Scored for every candidate.",
+      "modelConditional": false,
+      "layer": "published"
+    },
+    {
+      "id": "injectionDynamic",
+      "number": "6",
+      "domain": "Injection technique",
+      "label": "Injection is performed dynamically",
+      "descriptor1": "Once in the submucosa, no movement of the needle away from the muscularis",
+      "descriptor5": "Once in the submucosa, graduated movement of the needle away from the muscularis",
+      "mandatory": {
+        "hot": true,
+        "cold": false
+      },
+      "model": "yes",
+      "modelNote": "Scored for every candidate.",
+      "modelConditional": false,
+      "layer": "published"
+    },
+    {
+      "id": "injectionAccess",
+      "number": "7",
+      "domain": "Injection technique",
+      "label": "Injection is used to improve lesion access",
+      "descriptor1": "Injection does not facilitate access to the target lesion",
+      "descriptor5": "Injection clearly facilitates access to the target lesion",
+      "mandatory": {
+        "hot": true,
+        "cold": false
+      },
+      "model": "yes",
+      "modelNote": "Scored for every candidate.",
+      "modelConditional": false,
+      "layer": "published"
+    },
+    {
+      "id": "snareSize",
+      "number": "8",
+      "domain": "Snare placement technique",
+      "label": "Appropriate snare size/type selected",
+      "descriptor1": "Too large/small and of incorrect type",
+      "descriptor5": "Snare of appropriate size and type",
+      "mandatory": {
+        "hot": true,
+        "cold": true
+      },
+      "model": "yes",
+      "modelNote": null,
+      "modelConditional": false,
+      "layer": "published"
+    },
+    {
+      "id": "snarePosition",
+      "number": "9",
+      "domain": "Snare placement technique",
+      "label": "Stable position with lesion at 6 o’clock OR transformed to 6 o’clock",
+      "descriptor1": "Snare position is not consistently maintained at 6 o’clock and/or the position is unstable",
+      "descriptor5": "Snare position is consistently maintained at 6 o’clock and the position is stable",
+      "mandatory": {
+        "hot": true,
+        "cold": true
+      },
+      "model": "yes",
+      "modelNote": null,
+      "modelConditional": false,
+      "layer": "published"
+    },
+    {
+      "id": "snareCapture",
+      "number": "10",
+      "domain": "Snare placement technique",
+      "label": "Maximizing snare capture",
+      "descriptor1": "Poor, scrapes surface/no downward pressure/no aspiration, incomplete mucosal excision",
+      "descriptor5": "Good capture/downward pressure/aspiration resulting in complete capture of target tissue",
+      "mandatory": {
+        "hot": true,
+        "cold": true
+      },
+      "model": "yes",
+      "modelNote": null,
+      "modelConditional": false,
+      "layer": "published"
+    },
+    {
+      "id": "snareVisualised",
+      "number": "11",
+      "domain": "Snare placement technique",
+      "label": "Snare V precisely visualized during placement and closure",
+      "descriptor1": "Snare V not visualized during closure and far from the colonoscope",
+      "descriptor5": "Snare V visualized consistently during closure and near to the colonoscope",
+      "mandatory": {
+        "hot": true,
+        "cold": true
+      },
+      "model": "yes",
+      "modelNote": null,
+      "modelConditional": false,
+      "layer": "published"
+    },
+    {
+      "id": "residual",
+      "number": "12",
+      "domain": "Snare placement technique",
+      "label": "Residual tissue islands avoided if piecemeal resection or complete if en bloc",
+      "descriptor1": "No normal margin or no use of transected tissue edge, tissue islands/incomplete en-bloc",
+      "descriptor5": "> 2–3 mm normal margin, uses transected tissue edge, no tissue islands/complete en-bloc",
+      "mandatory": {
+        "hot": true,
+        "cold": true
+      },
+      "model": "yes",
+      "modelNote": "Margin judged against the marks; target B is expected en bloc.",
+      "modelConditional": false,
+      "layer": "published"
+    },
+    {
+      "id": "independentMovement",
+      "number": "13",
+      "domain": "Safety checks prior to resection",
+      "label": "Moves closed snare to confirm independent movement from deeper structures",
+      "descriptor1": "Does not check tissue mobility prior to transection with respect to deeper structures",
+      "descriptor5": "Checks mobility prior to transection with respect to deeper structures",
+      "mandatory": {
+        "hot": true,
+        "cold": false
+      },
+      "model": "yes",
+      "modelNote": null,
+      "modelConditional": false,
+      "layer": "published"
+    },
+    {
+      "id": "liftMovement",
+      "number": "14",
+      "domain": "Safety checks prior to resection",
+      "label": "Lifts snare away from muscularis propria prior to cutting",
+      "descriptor1": "Does not lift the snare prior to applying electrosurgical energy",
+      "descriptor5": "Lifts the snare away from the muscularis prior to the application of electrosurgical energy",
+      "mandatory": {
+        "hot": true,
+        "cold": false
+      },
+      "model": "yes",
+      "modelNote": null,
+      "modelConditional": false,
+      "layer": "published"
+    },
+    {
+      "id": "mucosa",
+      "number": "15",
+      "domain": "Defect assessment after resection",
+      "label": "Mucosa: detects and removes residual adenomatous tissue within the defect",
+      "descriptor1": "Does not check for residual adenomatous tissue and/or does not remove successfully",
+      "descriptor5": "Checks for residual adenomatous tissue and removes it successfully",
+      "mandatory": {
+        "hot": true,
+        "cold": true
+      },
+      "model": "yes",
+      "modelNote": "Residual = unresected marked mucosa.",
+      "modelConditional": false,
+      "layer": "published"
+    },
+    {
+      "id": "thermalAblation",
+      "number": "16",
+      "domain": "Defect assessment after resection",
+      "label": "Thermal ablation of the post-EMR margin",
+      "descriptor1": "Unsteady, results in areas of incomplete ablation, ablates visible polyp tissue, messy result",
+      "descriptor5": "Steady, systematic, does not ablate visible polyp tissue, complete ablation of the margin",
+      "mandatory": {
+        "hot": false,
+        "cold": false
+      },
+      "model": "limited",
+      "modelNote": "Scored on target A; non-perfused tissue whitens differently, so judge the technique.",
+      "modelConditional": true,
+      "layer": "published"
+    },
+    {
+      "id": "submucosa",
+      "number": "17",
+      "domain": "Defect assessment after resection",
+      "label": "Submucosa: detects and treats any bleeding vessels within the defect",
+      "descriptor1": "Neither detects nor treats bleeding vessels; treats benign submucosal appearances",
+      "descriptor5": "Detects/treats bleeding vessels; does not treat benign submucosal appearances",
+      "mandatory": {
+        "hot": true,
+        "cold": false
+      },
+      "model": "no",
+      "modelNote": null,
+      "modelConditional": false,
+      "layer": "published"
+    },
+    {
+      "id": "muscularis",
+      "number": "18",
+      "domain": "Defect assessment after resection",
+      "label": "Muscularis: detects and treats Deep Mural Injury ≥ 2 (Sydney classification)",
+      "descriptor1": "Misses signs of deep mural injury (types II–V) which require clip closure",
+      "descriptor5": "Detects and treats types II–V deep mural injury or confirms they are not present",
+      "mandatory": {
+        "hot": true,
+        "cold": false
+      },
+      "model": "yes",
+      "modelNote": null,
+      "modelConditional": false,
+      "layer": "published"
+    },
+    {
+      "id": "clipPlacement",
+      "number": "19",
+      "domain": "Accessory techniques in polypectomy",
+      "label": "Placement of through-the-scope clips",
+      "descriptor1": "Poor tissue capture, poor use of suction and positioning, incorrect orientation",
+      "descriptor5": "Good use of suction, positioning, and rotation, capture required tissue, secure closure",
+      "mandatory": {
+        "hot": false,
+        "cold": false
+      },
+      "model": "yes",
+      "modelNote": "When deep mural injury or perforation is present.",
+      "modelConditional": true,
+      "layer": "published"
+    },
+    {
+      "id": "retrievalDevice",
+      "number": "20",
+      "domain": "Accessory techniques in polypectomy",
+      "label": "Use of polyp retrieval device",
+      "descriptor1": "Poor positioning, does not capture all pieces, no sequential place and retrieve technique",
+      "descriptor5": "6 o’clock position, sequential place and retrieve technique, captures all pieces successfully",
+      "mandatory": {
+        "hot": false,
+        "cold": false
+      },
+      "model": "limited",
+      "modelNote": "Only if the station includes retrieval.",
+      "modelConditional": true,
+      "layer": "published"
+    },
+    {
+      "id": "coagGrasper",
+      "number": "21",
+      "domain": "Accessory techniques in polypectomy",
+      "label": "Use of coagulation grasper",
+      "descriptor1": "No water, does not wait for bleeding cessation prior to coagulation, does not tent vessel",
+      "descriptor5": "Uses water to identify vessel, confirms correct placement after closure, tents vessel",
+      "mandatory": {
+        "hot": false,
+        "cold": false
+      },
+      "model": "no",
+      "modelNote": null,
+      "modelConditional": false,
+      "layer": "published"
+    },
+    {
+      "id": "overallEntrustability",
+      "number": "22",
+      "domain": "Global",
+      "label": "Overall entrustability for this case",
+      "descriptor1": "Not ready to perform an EMR of this difficulty without the assessor",
+      "descriptor5": "Ready to perform an EMR of this difficulty independently (on the model: controls injection and snare resection of the standard targets safely and without help)",
+      "mandatory": {
+        "hot": true,
+        "cold": true
+      },
+      "model": "yes",
+      "modelNote": null,
+      "modelConditional": false,
+      "layer": "derived"
+    }
+  ],
+  "settings": {
+    "live": {
+      "hot": {
+        "required": [
+          "tipControl",
+          "extent",
+          "positioning",
+          "appropriateTechnique",
+          "injectionPlane",
+          "injectionDynamic",
+          "injectionAccess",
+          "snareSize",
+          "snarePosition",
+          "snareCapture",
+          "snareVisualised",
+          "residual",
+          "independentMovement",
+          "liftMovement",
+          "mucosa",
+          "submucosa",
+          "muscularis",
+          "overallEntrustability"
+        ],
+        "conditional": [
+          "thermalAblation",
+          "clipPlacement",
+          "retrievalDevice",
+          "coagGrasper"
+        ]
+      },
+      "cold": {
+        "required": [
+          "tipControl",
+          "extent",
+          "positioning",
+          "appropriateTechnique",
+          "snareSize",
+          "snarePosition",
+          "snareCapture",
+          "snareVisualised",
+          "residual",
+          "mucosa",
+          "overallEntrustability"
+        ],
+        "conditional": [
+          "thermalAblation",
+          "clipPlacement",
+          "retrievalDevice",
+          "coagGrasper"
+        ]
+      }
+    },
+    "video": {
+      "hot": {
+        "required": [
+          "tipControl",
+          "extent",
+          "positioning",
+          "appropriateTechnique",
+          "injectionPlane",
+          "injectionDynamic",
+          "injectionAccess",
+          "snareSize",
+          "snarePosition",
+          "snareCapture",
+          "snareVisualised",
+          "residual",
+          "independentMovement",
+          "liftMovement",
+          "mucosa",
+          "submucosa",
+          "muscularis",
+          "overallEntrustability"
+        ],
+        "conditional": [
+          "thermalAblation",
+          "clipPlacement",
+          "retrievalDevice",
+          "coagGrasper"
+        ]
+      },
+      "cold": {
+        "required": [
+          "tipControl",
+          "extent",
+          "positioning",
+          "appropriateTechnique",
+          "snareSize",
+          "snarePosition",
+          "snareCapture",
+          "snareVisualised",
+          "residual",
+          "mucosa",
+          "overallEntrustability"
+        ],
+        "conditional": [
+          "thermalAblation",
+          "clipPlacement",
+          "retrievalDevice",
+          "coagGrasper"
+        ]
+      }
+    },
+    "model": {
+      "hot": {
+        "required": [
+          "tipControl",
+          "extent",
+          "positioning",
+          "injectionPlane",
+          "injectionDynamic",
+          "injectionAccess",
+          "snareSize",
+          "snarePosition",
+          "snareCapture",
+          "snareVisualised",
+          "residual",
+          "independentMovement",
+          "liftMovement",
+          "mucosa",
+          "muscularis",
+          "overallEntrustability"
+        ],
+        "conditional": [
+          "thermalAblation",
+          "clipPlacement",
+          "retrievalDevice"
+        ]
+      },
+      "cold": {
+        "required": [
+          "tipControl",
+          "extent",
+          "positioning",
+          "injectionPlane",
+          "injectionDynamic",
+          "injectionAccess",
+          "snareSize",
+          "snarePosition",
+          "snareCapture",
+          "snareVisualised",
+          "residual",
+          "independentMovement",
+          "liftMovement",
+          "mucosa",
+          "muscularis",
+          "overallEntrustability"
+        ],
+        "conditional": [
+          "thermalAblation",
+          "clipPlacement",
+          "retrievalDevice"
+        ]
+      }
+    }
+  },
+  "sentinels": [
+    {
+      "id": "unrecognised_perforation",
+      "label": "Unrecognised perforation"
+    },
+    {
+      "id": "perforation_unclosed",
+      "label": "Perforation left unclosed",
+      "alsoImpliedBy": "model setting: station.perforation == \"not_closed\""
+    }
+  ],
+  "passRule": {
+    "layer": "derived",
+    "itemMin": 3,
+    "globalItem": "overallEntrustability",
+    "globalMin": 4,
+    "sentinelAllowed": false,
+    "requiredUnscored": "fail",
+    "conditionalNA": "excluded; a numeric score counts",
+    "nonApplicableScores": "ignored",
+    "patientThresholdStatus": "proposal — same rule as the model station, to be confirmed by the Certification Taskforce"
+  },
+  "researchScore": "Published GPAT % (sum of applicable fields / maximum, SMSA-weighted). Research and formative only; never used for certification."
+}
